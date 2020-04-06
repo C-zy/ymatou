@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -77,8 +78,30 @@
                     <h1 class="logo">
                         <a href=""></a>
                     </h1>
+                    <!-- 搜索框 -->
                     <form action="" class="search-wrap J_wrap-search">
                         <input class="input-search J_input-search" type="text" name="k" placeholder="搜索您想要的商品">
+                        <!-- 隐藏区域 -->
+                        <div class="search-recomend">
+                            <dl>
+                                <dt>大家都在搜</dt>
+                                <dd><a href="">男鞋</a></dd>
+                                <dd><a href="">安耐晒</a></dd>
+                                <dd><a href="">口罩</a></dd>
+                                <dd><a href="">女包</a></dd>
+                                <dd><a href="">拖鞋</a></dd>
+                                <dd><a href="">aj</a></dd>
+                                <dd><a href="">手表男</a></dd>
+                                <dd><a href="">口红</a></dd>
+                                <dd><a href="">香水</a></dd>
+                                <dd><a href="">jk</a></dd>
+                                <dd><a href="">面膜</a></dd>
+                                <dd><a href="">匡威</a></dd>
+                                <dd><a href="">耐克</a></dd>
+                                <dd><a href="">阿迪达斯</a></dd>
+                                <dd><a href="">美国疫情</a></dd>
+                            </dl>
+                        </div>
                         <button class="header-icon search-btn J_btn-search" type="submit"></button>
                     </form>
                     <div class="qrapp"></div>
@@ -93,10 +116,297 @@
                         分类
                         <i class="c-down"></i>
                     </a>
+                    <!-- 隐藏区域 -->
+                    <div class="category-box" style="opacity: 1;">
+                        <div class="category-downlist">
+                            <div class="category-wrap">
+                                <!-- 护肤 -->
+                                <div class="cw-item">
+                                    <a href="" title="护肤">
+                                        <h3 class="cw-title">
+                                            <span>护肤
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>面膜</span>
+                                            <span>水乳</span>
+                                            <span>防晒隔离</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBFlE_l-AFtC7AAMyS71u0oU066_1_1_o.gif" alt="护肤">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 彩妆 -->
+                                <div class="cw-item">
+                                    <a href="" title="彩妆">
+                                        <h3 class="cw-title">
+                                            <span>彩妆
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>口红</span>
+                                            <span>气垫</span>
+                                            <span>香水</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBVeZ2L6ABltOAABxkvbGDQk168_o.png" alt="彩妆">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 品牌箱包 -->
+                                <div class="cw-item">
+                                    <a href="" title="品牌箱包">
+                                        <h3 class="cw-title">
+                                            <span>品牌箱包
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>单肩包</span>
+                                            <span>双肩包</span>
+                                            <span>Coach</span>
+                                            <span>LV</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBVlFEvOAQkcaAAGYJe4aulA194_143_150_o.gif" alt="品牌箱包">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 鞋履 -->
+                                <div class="cw-item">
+                                    <a href="" title="鞋履">
+                                        <h3 class="cw-title">
+                                            <span>鞋履
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>凉鞋</span>
+                                            <span>单鞋</span>
+                                            <span>Adidas</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBFeZ2YSACNR4AACJFnNWXac077_o.png" alt="鞋履">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 女士穿搭 -->
+                                <div class="cw-item">
+                                    <a href="" title="女士穿搭">
+                                        <h3 class="cw-title">
+                                            <span>女士穿搭
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>连衣裙</span>
+                                            <span>T恤</span>
+                                            <span>衬衫</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUA1lk5NiANQAeAAD_7CZcg78365_461_486_o.gif" alt="女士穿搭">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 男士护肤 -->
+                                <div class="cw-item">
+                                    <a href="" title="男士护肤">
+                                        <h3 class="cw-title">
+                                            <span>男士护肤
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>发胶</span>
+                                            <span>剃须</span>
+                                            <span>止汗</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBVhSXpOAEDFIAACDzejl1ZE036_1_1_o.png" alt="男士护肤">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 内衣 -->
+                                <div class="cw-item">
+                                    <a href="" title="内衣">
+                                        <h3 class="cw-title">
+                                            <span>内衣
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>文胸</span>
+                                            <span>CK</span>
+                                            <span>维密</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUA1lk5rWASAHsAAFaTZMu2iw899_461_486_o.gif" alt="内衣">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 品质男装 -->
+                                <div class="cw-item">
+                                    <a href="" title="品质男装">
+                                        <h3 class="cw-title">
+                                            <span>品质男装
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>polo</span>
+                                            <span>衬衫</span>
+                                            <span>豆豆鞋</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBVlk4iiAEp0IAACiLbg3h8o349_461_486_o.gif" alt="品质男装">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 运动 -->
+                                <div class="cw-item">
+                                    <a href="" title="运动">
+                                        <h3 class="cw-title">
+                                            <span>运动
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>运动鞋</span>
+                                            <span>puma</span>
+                                            <span>Nike</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBFlk4ziAYl1gAADso_Kix_M090_461_486_o.gif" alt="运动">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 钟表配饰 -->
+                                <div class="cw-item">
+                                    <a href="" title="钟表配饰">
+                                        <h3 class="cw-title">
+                                            <span>钟表配饰
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>项链</span>
+                                            <span>墨镜</span>
+                                            <span>潘多拉</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBVeavnWAab-JAACOcFScJj8696_o.png" alt="钟表配饰">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 居家 -->
+                                <div class="cw-item">
+                                    <a href="" title="居家">
+                                        <h3 class="cw-title">
+                                            <span>居家
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>滤水壶</span>
+                                            <span>乳胶枕</span>
+                                            <span>保温杯</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUA1lFFDaARUpcAACzNBqBHFw705_188_181_o.gif" alt="居家">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 食品保健 -->
+                                <div class="cw-item">
+                                    <a href="" title="食品保健">
+                                        <h3 class="cw-title">
+                                            <span>食品保健
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>保健</span>
+                                            <span>葡萄酒</span>
+                                            <span>减肥排油</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUA1lHiFiAYmDvAAFME201JUk327_1_1_o.gif" alt="食品保健">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 母婴 -->
+                                <div class="cw-item">
+                                    <a href="" title="母婴">
+                                        <h3 class="cw-title">
+                                            <span>母婴
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>纸尿裤</span>
+                                            <span>奶粉</span>
+                                            <span>安全座椅</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBFlFFSmAFztnAADDj1QetZA463_1_1_o.gif" alt="母婴">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 数码家电 -->
+                                <div class="cw-item">
+                                    <a href="" title="数码家电">
+                                        <h3 class="cw-title">
+                                            <span>数码家电
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>洁面仪</span>
+                                            <span>吹风机</span>
+                                            <span>Beats</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBFhSZQSALSJnAABGFQdHEwQ540_1_1_o.png" alt="数码家电">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 更多 -->
+                                <div class="cw-item">
+                                    <a href="" title="更多" style="display: block;height: 41px;width: 63px;margin: 8px auto">
+                                        <img src="img/top/more.png" alt="更多">
+                                    </a>
+                                </div>
+                            </divcla>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        // 设置搜索框的显示与隐藏
+        $(".input-search").focus(()=>{
+            $(".search-recomend").show()
+        })
+        $(".input-search").blur(()=>{
+            $(".search-recomend").hide()
+        })
+        // 设置分类模块的显示与隐藏
+        $(".category-box").hover(()=>{
+            $(".current").addClass('select')
+            if($(".category-downlist").css("display")=='none'){
+            $(".current").removeClass('select')
+            }
+        })
+        $(".current").hover(()=>{
+            if($(".category-downlist").css("display")=='none'){
+            $(".current").removeClass('select')
+            }
+        })
+    </script>
 </body>
 
 </html>

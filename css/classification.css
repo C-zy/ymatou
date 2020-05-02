@@ -1,0 +1,694 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.classification_back{
+    width: 100%;
+    padding-bottom: 30px;
+    height: 3590px;
+    background: url(../img_classification/background_image.png) no-repeat  top;
+
+}
+.classification{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 包治百病 */
+.bag{
+    position: relative;
+    height: 440px;
+}
+.classification .classification_title{
+    background: url(../img_classification/bag_fashion.png) no-repeat;
+    display: inline-block;
+    width: 325px;
+    height: 75px;
+    font-size: 38px;
+    color: #383838;
+    font-weight: 700;
+    /* padding-left: 35px; */
+    position: absolute;
+}
+.bag .classification_title{
+    left: 0;
+    top: 80px;
+}
+.bag i{
+    margin-left: -5px;
+    display: inline-block;
+    width: 21px;
+    height: 34px;
+    vertical-align: middle;
+    background-image: url(../img_classification/ff.png);
+    background-position: -71px -102px;
+}
+/* 包治百病产品类 */
+.classification .cl_product{
+    width: 150px;
+    position: absolute;
+    text-decoration: none;
+    margin-top: 40px;
+    /* float: left; */
+}
+.pro_img img{
+    width: 150px;
+    height: 150px;
+}
+/* 分类a标签附上去改变样式 */
+.cl_product .pro_img:hover+.pro_name{
+    color: #c33;
+}
+.cl_product .pro_name:hover{
+    color: #c33;
+}
+/* .classification .cl_product :hover{
+    color: red;
+} */
+/* 点击a标签字体颜色变红 */
+/* .classification a:hover{
+    color: #c33;
+} */
+.pro_1{
+    left: 440px;
+    top: 0px;
+}
+.pro_2{
+    left: 600px;
+    top: 0;
+
+}
+.pro_3{
+    left: 760px;
+    top: 0;
+}
+.pro_4{
+    left: 920px;
+    top: 0;
+}
+.pro_5{
+    left: 130px;
+    top: 220px;
+}
+.pro_6{
+    left: 290px;
+    top: 220px;
+}
+.pro_7{
+    left: 450px;
+    top: 220px;
+}
+.pro_8{
+    left: 610px;
+    top: 220px;
+}
+.pro_9{
+    left: 770px;
+    top: 220px;
+}
+.classification .pro_img{
+    background-color: #fff;
+    text-align: center;
+    line-height: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+.classification .pro_name{
+    text-align: center;
+    font-size: 14px;
+    color:#383838;
+    margin-top: 12px;
+}
+/*美鞋不嫌多 */
+.shoes{
+    position: relative;
+    height: 440px;
+}
+.shoes .classification_title{
+    right: 0;
+    top: 80px;
+}
+.shoes i{
+    display: inline-block;
+    width: 21px;
+    height: 34px;
+    background-image: url(../img_classification/ff.png);
+    background-position:-44px -102px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.shoes .shoes_1{
+    top: 0;
+    left:0px;
+}
+.shoes_2{
+    top: 0px;
+    left: 160px;
+}
+.shoes_3{
+    top: 0px;
+    left: 320px;
+}
+.shoes_4{
+    top: 0px;
+    left: 480px;
+}
+.shoes_5{
+    top: 0px;
+    left: 640px;
+}
+.shoes_6{
+    left: 154px;
+    top: 220px;
+}
+.shoes_7{
+    left: 314px;
+    top: 220px;
+}
+.shoes_8{
+    left: 474px;
+    top: 220px;
+}
+.shoes_9{
+    left: 634px;
+    top: 220px;
+}
+/*护肤要积极  */
+.skincare{
+    position: relative;
+    height: 440px;
+}
+.skincare .classification_title{
+    left: 0;
+    top: 100px;
+}
+.skincare i{
+    display: inline-block;
+    width: 21px;
+    height: 34px;
+    background-image: url(../img_classification/ff.png);
+    background-position:-71px -102px;
+    vertical-align: middle;
+    margin-left: -5px;
+}
+.skincare .skincare1{
+    top: 0;
+    left: 375px;
+}
+.skincare2{
+    top: 0;
+    left: 535px;
+}
+.skincare3{
+    top: 0px;
+    left: 695px;
+}
+.skincare4{
+    top: 0px;
+    left: 855px;
+}
+.skincare5{
+    top: 0;
+    left: 1015px;
+}
+.skincare6{
+    top: 220px;
+    left: 325px;
+}
+.skincare7{
+    top: 220px;
+    left: 485px;
+}
+.skincare8{
+    top: 220px;
+    left: 645px;
+}
+.skincare9{
+    top: 220px;
+    left: 805px;
+}
+/* 新手美妆指南 */
+.beauty_guide{
+    position: relative;
+    height:440px ;
+}
+.beauty_guide .classification_title{
+    right: 0;
+    top:100px;
+}
+.beauty_guide i{
+    display: inline-block;
+    width: 21px;
+    height: 34px;
+    background-image: url(../img_classification/ff.png);
+    background-position:-44px -102px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.beauty_guide .guide1{
+    top: 0;
+    left: 105px;
+}
+.guide2{
+    top: 0;
+    left: 255px;
+}
+.guide3{
+    top: 0;
+    left: 415px;
+}
+.guide4{
+    top: 0;
+    left: 575px;
+}
+.guide5{
+    left: 0;
+    top: 220px;
+}
+.guide6{
+    left: 150px;
+    top: 220px;
+}
+.guide7{
+    top: 220px;
+    left: 310px;
+}
+.guide8{
+    top: 220px;
+    left: 470px;
+}
+.guide9{
+    top: 220px;
+    left: 630px;
+}
+/* 吃出健康 */
+.eat_health{
+    position: relative;
+    height: 440px;
+}
+.eat_health .classification_title{
+    left: 0;
+    top: 80px;
+}
+.eat_health i{
+    display: inline-block;
+    width: 21px;
+    height: 34px;
+    background-image: url(../img_classification/ff.png);
+    background-position:-71px -102px;
+    vertical-align: middle;
+    margin-left: -5px;
+}
+.eat_health .health1{
+    top: 0;
+    left: 440px;
+}
+.health2{
+    top: 0;
+    left: 600px;
+}
+.health3{
+    top: 0;
+    left: 760px;
+}
+.health4{
+    top: 0;
+    left: 920px;
+}
+.health5{
+    top: 220px;
+    left: 130px;
+}
+.health6{
+    top: 220px;
+    left: 290px;
+}
+.health7{
+    top: 220px;
+    left: 450px;
+}
+.health8{
+    top: 220px;
+    left: 610px;
+}
+.health9{
+    top: 220px;
+    left: 770px;
+}
+/* 我要减肥我要逆袭 */
+.lose_weight{
+    position: relative;
+    height: 440px;
+}
+.lose_weight .classification_title{
+    top:80px;
+    right: 0px;
+    /* white-space: nowrap; */
+}
+.lose_weight i{
+    display: inline-block;
+    width: 21px;
+    height: 34px;
+    background-image: url(../img_classification/ff.png);
+    background-position:-44px -102px;
+    vertical-align: middle;
+    margin-right: 5px;
+} 
+.lose_weight .loseweight1{
+    top: 0;
+    left: 0px;
+}
+.loseweight2{
+    top: 0;
+    left: 160px;
+}
+.loseweight3{
+    top: 0;
+    left: 320px;
+}
+.loseweight4{
+    top: 0;
+    left: 480px;
+}
+.loseweight5{
+    top: 0;
+    left: 640px;
+}
+.loseweight6{
+    top: 220px;
+    left: 145px;
+}
+.loseweight7{
+    top: 220px;
+    left:304px;
+}
+.loseweight8{
+    top: 220px;
+    left:464px;
+}
+.loseweight9{
+    top: 220px;
+    left:624px;
+}
+/* 有这些足够撩妹 */
+.enough_girl{
+    position: relative;
+    height: 440px;
+}
+.enough_girl .classification_title{
+    top: 100px;
+    left: 0px;
+}
+.enough_girl i{
+    display: inline-block;
+    width: 21px;
+    height: 34px;
+    background-image: url(../img_classification/ff.png);
+    background-position: -71px -102px;
+    vertical-align: middle;
+    margin-left: 5px;
+
+}
+.enough_girl .girl1{
+    top: 0;
+    left: 375px;
+}
+.enough_girl .girl2{
+    top: 0;
+    left: 535px;
+}
+.enough_girl .girl3{
+    top: 0;
+    left: 695px;
+}
+.enough_girl .girl4{
+    top: 0;
+    left:855px;
+}
+.enough_girl .girl5{
+    top: 0;
+    left:1015px;
+}
+.enough_girl .girl6{
+    top: 220px;
+    left:325px;
+}
+.enough_girl .girl7{
+    top: 220px;
+    left:485px;
+}
+.enough_girl .girl8{
+    top: 220px;
+    left:645px;
+}
+.enough_girl .girl9{
+    top: 220px;
+    left:805px;
+}
+/* 娃好我也好 */
+.child_good{
+    position: relative;
+    height: 440px;
+}
+.child_good .classification_title{
+    right: 0;
+    top: 100px;
+}
+.child_good i{
+    display: inline-block;
+    width: 21px;
+    height: 34px;
+    background-image: url(../img_classification/ff.png);
+    background-position:-44px -102px ;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.child_good .child1{
+    top: 0;
+    left: 95px;
+}
+.child_good .child2{
+    top: 0;
+    left: 255px;
+}
+.child3{
+    top: 0;
+    left: 415px;
+}
+.child4{
+    top: 0;
+    left: 575px;
+}
+.child5{
+    top: 220px;
+    left: 0px;
+}
+.child6{
+    top: 220px;
+    left: 160px;
+}
+.child7{
+    top: 220px;
+    left: 320px;
+}
+.child8{
+    top: 220px;
+    left: 480px;
+}
+.child9{
+    top: 220px;
+    left: 640px;
+}
+/* 品牌 */
+.brand_inner{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    /* height:400px; */
+    padding-top: 35px;
+}
+.brand_inner a{
+    text-decoration: none;
+}
+.popular_brand{
+    z-index: 1;
+    height: 42px;
+    line-height: 37px;
+    border-bottom: 1px solid #c33;
+    text-align: left;
+    position: relative;
+    bottom: -1px;
+}
+.popular_brand .brand_title>a{
+    color:#383838;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.popular_brand .brand_title a:hover{
+    color: #c33;
+}
+
+.popular_brand .tab_details{
+    position: relative;
+    float: right;
+}
+.popular_brand .tab_details a{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    width: 150px;
+    height: 36px;
+    border: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-top: 4px solid #fff;
+    text-align: center;
+}
+.popular_brand .tab_details a.brand_active{
+    height: 38px;
+    background-color: #fff;
+    border-top-width: 4px;
+    border-top:none;
+    border-color: #c33;
+    border-top: 4px solid #c33;
+    border-bottom: 2px solid #fff;
+}
+/* 品牌轮播图 */
+.brand_list{
+    position: relative;
+    /* 加上overflowhidden会出现一个问题 在浮上ul得那列标题 会把下边的内容图片给遮盖住 */
+    /* overflow: hidden; */
+    height: 180px;
+    border: 1px solid #dedede;
+}
+.brand_list .brand_image{
+    /* width: 1400px; */
+    height: 180px;
+   display: none;
+    margin-left: 20px;
+    margin-top: 15px;
+    transition: all .3s;
+}
+.brand_list input:first-child{
+    width: 20px;
+    height: 40px;
+    text-align: left;
+    background-color: #666;
+    color: #dedede;
+    outline: none;
+    border: none;
+    font-size:20px;
+    position: absolute;
+    cursor: pointer;
+    top: 70px;
+    left: 0px;
+ 
+}
+.brand_list input:nth-of-type(2){
+    width: 20px;
+    height: 40px;
+    text-align: left;
+    background-color: #666;
+    color: #dedede;
+    outline: none;
+    border: none;
+    font-size:20px;
+    position: absolute;
+    cursor: pointer;
+    top: 70px;
+    right:0px;
+ 
+}
+.brand_list .brand_image a{
+    width: 100px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 15px;
+}
+.brand_list .brand_image .brand_lazy{
+    width: 100px;
+    background-color: #f8f8f8;
+}
+.brand_list .brand_image .brand_lazy img{
+    width: 100px;
+    height: 100px;
+}
+/* .brand_image{
+    width: 1300px;
+} */
+/* 点击对应的tab显示对应的模块 */
+.brand_list .br_show{
+    display: block;
+}
+/* 热门主题 */
+.hot_topic{
+    padding-top: 50px;
+}
+.hot_title{
+   
+    position: relative;
+    height: 8px;
+    background: url(../img_classification/hot_topic.png) no-repeat;
+}
+.hot_title span{
+    font-size: 16px;
+    color: #383838;
+    position: absolute;
+    top: -10px;
+    left: 581px;
+}
+/* 内容 */
+.hot_topic .hot_content{
+    margin-top: 20px;
+    /* height: 1000px; */
+}
+/* .hot_content .hot_list{
+    border: 1px solid red;
+} */
+.hot_content .hot_list .list_con{
+    margin-left: 8px;
+    margin-top: 10px;
+    float: left;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    width: 391px;
+    height: 229px;
+}
+.hot_content .hot_list .list_con .hot_tit{
+    margin-bottom: 10px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #383838;
+    background: linear-gradient(#fbe9c1,#ffdbb5);
+}
+.hot_content .hot_list .list_con .hot_tit:hover{
+    color: #c33;
+}
+
+.hot_content .hot_list .list_con .hot_img .hot_imglist{
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-left: 8px;
+}
+.hot_img .hot_imglist img{
+    width: 120px;
+    height: 120px;
+}
+.hot_img .hot_imglist p:nth-of-type(1){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hot_img .hot_imglist p:nth-of-type(2){
+    color: #c33;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.hot_list li.list_con:hover{
+    box-shadow:0 3px 4px rgba(0,0,0,.24);
+}

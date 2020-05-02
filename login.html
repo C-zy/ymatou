@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+    <!-- <script src="./js/vscode.js"></script> -->
+
+
+</head>
+<style>
+    #error2 {
+        display: none;
+    }
+
+    .submit {
+        color: wheat;
+        background: none;
+        border: none
+    }
+
+    .submit {
+        width: 50px;
+        background: #ff3d00;
+        float: left;
+    }
+
+    #r-content-from-img {
+        float: right;
+        width: 98px;
+        height: 38px;
+        margin: 0;
+    }
+    .baocuo {
+        height: 26px;
+        background-color: #f04e00;
+        font-size: 12px;
+        color: #fff;
+        line-height: 26px;
+        padding-left: 7px;
+        width: 200px;
+        margin-left: 68px;
+    }
+</style>
+
+<body>
+    <div class="top">
+        <div class="top-middle">
+            <div class="left">
+                <a class="logo" href="#"></a>
+            </div>
+            <div class="right">
+                <a class="item" href="#">请登录</a>
+                <div class="top-item">
+                    <a class="drop" href="">
+                        <span>快速注册</span>
+                        <i class="arrow"></i>
+                    </a>
+                    <div class="top-hide">
+                        <ul>
+                            <li>
+                                <a class="txt" href="">卖家注册</a>
+                            </li>
+                            <li>
+                                <a class="txt" href="">卖家注册认证</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-item">
+                    <a class="drop" href="">
+                        <span>我的码头</span>
+                        <i class="arrow"></i>
+                    </a>
+                    <div class="top-hide">
+                        <ul>
+                            <li>
+                                <a class="txt" href="">我的订单</a>
+                            </li>
+                            <li>
+                                <a class="txt" href="">我的优惠卷</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间内容 -->
+    <div class="middle">
+        <div class="login-one">
+            <a class="shijie" href="#"></a>
+        </div>
+        <div class="input-one">
+            <ul>
+                <li class="action">
+                    <b>洋码头登录</b>
+                    <div class="line"></div>
+                    <a href="register.html">免费注册</a>
+                </li>
+                <li>
+                    <div class="input-login">
+                        <div class="border">
+                            <!-- 提交表单 -->
+                            <form action="http://localhost/ymatou/PHP/login.php" id="logform" method="post" name="logform"
+                                onsubmit="return check()">
+                                <div class="div_input name-one">
+                                    手机邮箱：
+                                    <input type="text" name="phone" id="phone" class="input_style user"
+                                        placeholder="请输入手机/用户名" maxlength="11">
+                                </div>
+                                <div class="div_input name-one" style="margin-left: 38px;">
+                                    密码：
+                                    <input type="password" name="password" id="password" class="input_style password"
+                                        placeholder="请输入密码">
+                                </div>
+                                <div class="div_input name-one"
+                                    style="margin-left:49px;display:flex;justify-content: center;">
+                                    验证码：
+                                    <input type="text" name="r-content-from-input" style="width: 56px;"
+                                        placeholder="验证码" id="r-content-from-input" class="input_style hello">
+                                    <div id="r-content-from-img"></div>
+                                    <span>看不清</span>
+                                    <a id="onec" class="blue">点击码</a>
+                                    <span id="error2">请输入正确的图形验证码</span>
+                                </div>
+                                <div class="div_input">
+                                    <ul id="check_login">
+                                        <li>
+                                            <input type="checkbox" name="" id="hello" value="true">
+                                            &nbsp; &nbsp;
+                                            <label style="color: #666;font-size: 12px;" for="IsRemember">两周内自动登录</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="div_input errorMsgOut" style="display: none;">
+                                    <div class="baocuo"></div>
+                                </div>
+                                <div class="in_input">
+                                    <div id="logindiv" style="display: flex;justify-content: center;">
+                                        <div id="submit">
+                                            <input type="submit" class="submit" id="loginBtn" value="" />
+                                        </div>
+                                        <span class="forgetPwd">
+                                            <a href="#">忘记密码</a>
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        </form>
+                        <div id="line_line"></div>
+                        <ul class="inline-one">
+                            <li>
+                                <a class="sign_login" href="">
+                                    <i></i>
+                                    微博登录
+                                </a>
+                            </li>
+                            <li>
+                                <div class="line"></div>
+                            </li>
+                            <li>
+                                <a class="money" href="">
+                                    <i></i>
+                                    支付宝账号登录
+                                </a>
+                            </li>
+                            <li>
+                                <a id="login-two" href="">
+                                    <i></i>
+                                    微信登录
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        </div>
+        </li>
+        </ul>
+    </div>
+    </div>
+    <!-- 底部 -->
+    <div class="bottom">
+        <div id="bottom-one">
+            © 2009－2018 ymatou.com, All rights reserved 增值电信业务经营许可证：沪B2-20140021<br>
+            上海洋码头网络技术有限公司 版权所有<br>
+            上海市静安区江场三路93号13层
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $(".top-item").mouseover(function () {
+                $(this).children(".top-hide").slideToggle(0);
+            })
+            $(".top-item ").mouseout(function () {
+                $(this).children(".top-hide").slideToggle(0);
+            })
+        })
+    </script>
+
+
+</body>
+
+</html>

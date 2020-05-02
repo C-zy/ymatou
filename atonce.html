@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洋码头 - 让人放心的海外购物社区货 - 购物车</title>
+    <link rel="stylesheet" href="css/shopping.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/atonce.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 网页顶部 -->
+    <div class="wrap">
+        <div class="wrap topbar">
+            <div class="inner">
+                <div class="topnar-fl">
+                    <a href="">Hi，欢迎来到洋码头！</a>
+                    <span class="user-type" style="padding-left: 10px;display: inline-block;">
+                        <a href="">我是买手</a>
+                    </span>
+                </div>
+                <ul class="nav topbar-fr usa">
+                    <li class="nav-item us">
+                        <a href="login.html"><span class="title">登录</span></a>
+                    </li>
+                    <li class="nav-item us">
+                        <a href="register.html"><span class="title">注册</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shopping.html"><span class="title">购物车</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="order_form.html"><span class="title">我的订单</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="personal.html"><span class="title">个人中心</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gonggao.html"><span class="title">规则&公告</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 网页右导航栏 -->
+        <div class="rightbar">
+            <ul class="rightbar-inner" style="padding:270px 0 0;">
+                <li class="item user"><a href=""><i class="rightbar-icon rti-user"></i></a></li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;">
+                        <i class="rightbar-icon rti-cart"></i><span class="title">
+                            购<br>物<br>车
+                        </span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;">
+                        <i class="rightbar-icon rti-code"></i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;" onclick="
+                    javascript:document.documentElement.scrollTop = document.body.scrollTop =0">
+                        <i class="rightbar-icon rti-top"></i>
+                        <span class="title">TOP</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 购物车部分 -->
+        <div class="login wrap clearfix">
+            <a href="index.html" class="login_a"></a>
+            <span class="loginTitle">收银台</span>
+            <div class="shopping_flow clearfix">
+                <div class="left-1">
+                    <span class="circle">1</span>
+                    <span>我的购物车</span>
+                </div>
+                <div class="right_one"></div>
+                <div class="left_one"></div>
+                <div class="left-2">
+                    <span class="red red2">2</span>
+                    <span class="gray iconfont">提交订单</span>
+                </div>
+                <div class="right_two"></div>
+                <div class="left_two"></div>
+                <div class="left-3">
+                    <span class="red red3">3</span>
+                    <span class="gray gray3">选择支付方式</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zfb wrap">
+        <div class="mc-hd">
+            <p class="mc-hd-p1"><img src="img/dui.svg" alt="">订单提交成功，现在只差最后一步啦！</p>
+            <p>请您在提交订单后<em class="time">240</em>分钟内完成支付，否则订单会自动取消</p>
+        </div>
+        <div class="mc-he">
+            <p class="mc-he-p1">应付总金额：<em id="yzf">￥ 1000</em></p>
+            <p class="mc-he-p2"><input type="checkbox" name="" id="md-he-1">可用账户余额 <em class="check1">0</em>元
+                (因海关要求，含保税商品不能使用余额)
+            </p>
+        </div>
+        <div class="mc-bo clearfix">
+            <div class="mc-bo-lf zfbwx">
+                <img src="img/right_dui.svg" alt="" class="right_dui">
+                <img src="img/zhifubao.svg" alt="">
+                <p>支付宝支付</p>
+                <em style="color: #c33;">推荐</em>
+            </div>
+            <div class="mc-bo-ri zfbwx">
+                <img src="img/right_dui.svg" alt=""class="right_dui">
+                <img src="img/weixin.svg" alt="">
+                <p>微信支付</p>
+
+            </div>
+
+        </div>
+        <p class="hou">需支付：<em id="xzf">￥100000</em></p>
+        <button class="let">去支付</button>
+    </div>
+    <!-- footer -->
+    <div class="wrapper footer">
+        <div class="matou-server">
+            <a href="" class="matou-server-link" style="color: #fff;">
+                <img src="img/footer/1.png" alt="">
+            </a>
+        </div>
+        <div class="area">
+            <div class="bottom_list">
+                <ul class="dl">
+                    <li class="dt">购物指南</li>
+                    <li class="dd">注册与登录</li>
+                    <li class="dd">账户信息维护</li>
+                    <li class="dd">购物流程</li>
+                    <li class="dd">会员体系</li>
+                    <li class="dd">常见问题</li>
+                </ul>
+                <ul class="dl">
+                    <li class="dt">订单服务</li>
+                    <li class="dd">订单状态说明</li>
+                    <li class="dd">自动取消订单</li>
+                    <li class="dd">上传身份证</li>
+                </ul>
+                <ul class="dl">
+                    <li class="dt">支付与配送</li>
+                    <li class="dd">支付方式</li>
+                    <li class="dd">优惠券和红包</li>
+                    <li class="dd">如何提现</li>
+                    <li class="dd">配送方式</li>
+                </ul>
+                <ul class="dl">
+                    <li class="dt">售后服务</li>
+                    <li class="dd">消费维权</li>
+                    <li class="dd">纠纷处理规则</li>
+                    <li class="dd">退货规则</li>
+                </ul>
+                <div class="dl last">
+                    <div class="dt">官方微信</div>
+                    <p><img src="img/footer/2.png" alt=""></p>
+                    <span class="weibobox">
+                        <a href="">关注微博</a>
+                        <a href=""><span class="ico-weibo-png"></span></a>
+                    </span>
+                </div>
+            </div>
+            <div class="matou-intro">
+                <a href="">关于码头</a>
+                <a href="">码头招聘</a>
+                <a href="">网站地图</a>
+                <a href="">所有帮助</a>
+                <a href="">海外招商中心</a>
+                <a href="">扫货买手规则</a>
+                <a href="" class="last">卖家常见问题</a>
+            </div>
+            <p class="footer_p">© 2014－2020 ymatou.hk 版权所有</p>
+        </div>
+    </div>
+    <script src="js/atonce.js"></script>
+</body>
+
+</html>

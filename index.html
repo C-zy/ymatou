@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洋码头首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <!-- 网页顶部 -->
+        <div class="topbar">
+            <div class="inner">
+                <div class="topnar-fl">
+                    <a href="">Hi，欢迎来到洋码头！</a>
+                    <span class="user-type" style="padding-left: 10px;display: inline-block;">
+                        <a href="">我是买手</a>
+                    </span>
+                </div>
+                <ul class="nav topbar-fr usa">
+                    <li class="nav-item us">
+                        <a href="login.html"><span class="title">登录</span></a>
+                    </li>
+                    <li class="nav-item us">
+                        <a href="register.html"><span class="title">注册</span></a>
+                    </li>
+                    <li class="nav-item head-shopping">
+                        <a href="shopping.html"><span class="title">购物车</span></a>
+                    </li>
+                    <li class="nav-item head-order">
+                        <a href="order_form.html"><span class="title">我的订单</span></a>
+                    </li>
+                    <li class="nav-item head-per">
+                        <a href="personal.html"><span class="title">个人中心</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gonggao.html"><span class="title">规则&公告</span>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href=""><span class="title">帮助中心</span></a>
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+        <!-- 网页右导航栏 -->
+        <div class="rightbar">
+            <ul class="rightbar-inner" style="padding:270px 0 0;">
+                <li class="item user head-per"><a href="personal.html"><i class="rightbar-icon rti-user"></i></a></li>
+                <li class="item head-shopping">
+                    <a href="shopping.html" style="padding-bottom: 2px;">
+                        <i class="rightbar-icon rti-cart"></i><span class="title">
+                        购<br>物<br>车
+                    </span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;">
+                        <i class="rightbar-icon rti-code"></i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;" onclick="
+                    javascript:document.documentElement.scrollTop = document.body.scrollTop =0">
+                        <i class="rightbar-icon rti-top"></i>
+                        <span class="title">TOP</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 网页头部 -->
+        <div class="header global-wrap">
+            <div class="inner">
+                <div class="header-search clearfix">
+                    <h1 class="logo">
+                        <a href=""></a>
+                    </h1>
+                    <!-- 搜索框 -->
+                    <form action="search.html" class="search-wrap J_wrap-search">
+                        <input class="input-search J_input-search" id="ipt" type="text" name="k" placeholder="搜索您想要的商品">
+                        <!-- 隐藏区域 -->
+                        <div class="search-recomend">
+                            <dl id="ipt-t">
+                                <dt>大家都在搜</dt>
+                                <dd><a href="javascript:void(0)" class="hid-txt">男鞋</a></dd>
+                                <dd><a href="javascript:void(0)">安耐晒</a></dd>
+                                <dd><a href="javascript:void(0)">口罩</a></dd>
+                                <dd><a href="javascript:void(0)">女包</a></dd>
+                                <dd><a href="javascript:void(0)">拖鞋</a></dd>
+                                <dd><a href="javascript:void(0)">aj</a></dd>
+                                <dd><a href="javascript:void(0)">手表男</a></dd>
+                                <dd><a href="javascript:void(0)">口红</a></dd>
+                                <dd><a href="javascript:void(0)">香水</a></dd>
+                                <dd><a href="javascript:void(0)">jk</a></dd>
+                                <dd><a href="javascript:void(0)">面膜</a></dd>
+                                <dd><a href="javascript:void(0)">匡威</a></dd>
+                                <dd><a href="javascript:void(0)">耐克</a></dd>
+                                <dd><a href="javascript:void(0)">阿迪达斯</a></dd>
+                                <dd><a href="javascript:void(0)">美国疫情</a></dd>
+                            </dl>
+                        </div>
+                        <button class="header-icon search-btn J_btn-search" id="but" type="submit"></button>
+                    </form>
+                    <div class="qrapp"></div>
+                </div>
+                <div style="width: 100%;height: 1px;overflow: hidden"></div>
+                <!-- 分区 -->
+                <div class="menu-nav">
+                    <a href="#" class="menu-item" id="index-tab" style="color:#c33 ;">首页</a>
+                    <a href="today_rush.html" class="menu-item" id="todaybuy-bt">今日限时抢</a>
+                    <a href="foreign_goods.html" class="menu-item" id="ymt-bt">洋货集</a>
+                    <a href="classification.html" class="menu-item current" id="categoryMenu">
+                        分类
+                        <i class="c-down"></i>
+                    </a>
+                    <!-- 隐藏区域 -->
+                    <div class="category-box" style="opacity: 1;">
+                        <div class="category-downlist">
+                            <div class="category-wrap">
+                                <!-- 护肤 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="护肤">
+                                        <h3 class="cw-title">
+                                            <span>护肤
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>面膜</span>
+                                            <span>水乳</span>
+                                            <span>防晒隔离</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBFlE_l-AFtC7AAMyS71u0oU066_1_1_o.gif" alt="护肤">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 彩妆 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="彩妆">
+                                        <h3 class="cw-title">
+                                            <span>彩妆
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>口红</span>
+                                            <span>气垫</span>
+                                            <span>香水</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBVeZ2L6ABltOAABxkvbGDQk168_o.png" alt="彩妆">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 品牌箱包 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="品牌箱包">
+                                        <h3 class="cw-title">
+                                            <span>品牌箱包
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>单肩包</span>
+                                            <span>双肩包</span>
+                                            <span>Coach</span>
+                                            <span>LV</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBVlFEvOAQkcaAAGYJe4aulA194_143_150_o.gif" alt="品牌箱包">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 鞋履 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="鞋履">
+                                        <h3 class="cw-title">
+                                            <span>鞋履
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>凉鞋</span>
+                                            <span>单鞋</span>
+                                            <span>Adidas</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBFeZ2YSACNR4AACJFnNWXac077_o.png" alt="鞋履">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 女士穿搭 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="女士穿搭">
+                                        <h3 class="cw-title">
+                                            <span>女士穿搭
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>连衣裙</span>
+                                            <span>T恤</span>
+                                            <span>衬衫</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUA1lk5NiANQAeAAD_7CZcg78365_461_486_o.gif" alt="女士穿搭">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 男士护肤 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="男士护肤">
+                                        <h3 class="cw-title">
+                                            <span>男士护肤
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>发胶</span>
+                                            <span>剃须</span>
+                                            <span>止汗</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBVhSXpOAEDFIAACDzejl1ZE036_1_1_o.png" alt="男士护肤">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 内衣 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="内衣">
+                                        <h3 class="cw-title">
+                                            <span>内衣
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>文胸</span>
+                                            <span>CK</span>
+                                            <span>维密</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUA1lk5rWASAHsAAFaTZMu2iw899_461_486_o.gif" alt="内衣">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 品质男装 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="品质男装">
+                                        <h3 class="cw-title">
+                                            <span>品质男装
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>polo</span>
+                                            <span>衬衫</span>
+                                            <span>豆豆鞋</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBVlk4iiAEp0IAACiLbg3h8o349_461_486_o.gif" alt="品质男装">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 运动 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="运动">
+                                        <h3 class="cw-title">
+                                            <span>运动
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>运动鞋</span>
+                                            <span>puma</span>
+                                            <span>Nike</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBFlk4ziAYl1gAADso_Kix_M090_461_486_o.gif" alt="运动">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 钟表配饰 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="钟表配饰">
+                                        <h3 class="cw-title">
+                                            <span>钟表配饰
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>项链</span>
+                                            <span>墨镜</span>
+                                            <span>潘多拉</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBVeavnWAab-JAACOcFScJj8696_o.png" alt="钟表配饰">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 居家 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="居家">
+                                        <h3 class="cw-title">
+                                            <span>居家
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>滤水壶</span>
+                                            <span>乳胶枕</span>
+                                            <span>保温杯</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUA1lFFDaARUpcAACzNBqBHFw705_188_181_o.gif" alt="居家">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 食品保健 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="食品保健">
+                                        <h3 class="cw-title">
+                                            <span>食品保健
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>保健</span>
+                                            <span>葡萄酒</span>
+                                            <span>减肥排油</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUA1lHiFiAYmDvAAFME201JUk327_1_1_o.gif" alt="食品保健">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 母婴 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="母婴">
+                                        <h3 class="cw-title">
+                                            <span>母婴
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>纸尿裤</span>
+                                            <span>奶粉</span>
+                                            <span>安全座椅</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBFlFFSmAFztnAADDj1QetZA463_1_1_o.gif" alt="母婴">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 数码家电 -->
+                                <div class="cw-item">
+                                    <a href="javascript:void(0)" title="数码家电">
+                                        <h3 class="cw-title">
+                                            <span>数码家电
+                                                <em class="header-icon"></em>
+                                            </span>
+                                        </h3>
+                                        <div class="cw-subtitle">
+                                            <span>洁面仪</span>
+                                            <span>吹风机</span>
+                                            <span>Beats</span>
+                                        </div>
+                                        <span class="cw-img">
+                                            <img src="img/top/CgvUBFhSZQSALSJnAABGFQdHEwQ540_1_1_o.png" alt="数码家电">
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- 更多 -->
+                                <div class="cw-item">
+                                    <a href="class_more.html" title="更多" style="display: block;height: 41px;width: 63px;margin: 8px auto">
+                                        <img src="img/top/more.png" alt="更多">
+                                    </a>
+                                </div>
+                                </divcla>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 头部图片 -->
+            <div class="home-banners">
+                <div class="sb-bd focus-images">
+                    <ul class="images">
+                        <li class="item slider-panel current" style="background-color:#F13454">
+                            <div class="area">
+                                <a href=""><img src="img/top/CgvUBVt_uq2AAQvbAAE47XDOiL4621_3_1_o.png" alt=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="wy-slide-nav">
+                        <span class="focusitem slider-item current"></span>
+                    </div>
+                    <div class="slider-page">
+                        <span class="swith-btn swith-btn-prev slider-pre">
+                        <i class="home-icon hi-prev"></i>
+                    </span>
+                        <span class="swith-btn swith-btn-next slider-next">
+                        <i class="home-icon hi-next"></i>
+                    </span>
+                    </div>
+                </div>
+                <div class="sb-ft">
+                    <div class="inner">
+                        <span class="item">
+                        <i class="zhengpin-icon zhengpin1"></i>
+                        <span class="title">海外正品</span>
+                        </span>
+                        <span class="item">
+                        <i class="zhengpin-icon zhengpin4"></i>
+                        <span class="title">严格监管</span>
+                        </span>
+                        <span class="item">
+                        <i class="zhengpin-icon zhengpin2"></i>
+                        <span class="title">买手认证</span>
+                        </span>
+                        <span class="item">
+                        <i class="zhengpin-icon zhengpin3"></i>
+                        <span class="title">售后无忧</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- 首页内容 -->
+            <div class="mainer global-wrap">
+                <div class="inner">
+                    <!-- 今日限时抢 -->
+                    <div class="mod mod-today-buying">
+                        <!-- 限时抢头部 -->
+                        <div class="mod-hd">
+                            <i class="home-icon hi-todaybuy"></i>
+                            <span class="title">今日限时抢</span>
+                            <a href="./class_more.html" class="more">更多
+                            <i class="home-icon hi-more"></i>
+                        </a>
+                        </div>
+                        <!-- 限时抢 -->
+                        <div class="mod-bd">
+                            <div class="today-buying-wrap">
+                                <span class="swith-btn swith-btn-prev" id="btn-prev">
+                                <i class="home-icon hi-prev"></i>
+                            </span>
+                                <span class="swith-btn swith-btn-next" id="btn-next">
+                                <i class="home-icon hi-next"></i>
+                            </span>
+                                <ul class="swith-today-banner" id="xbanner">
+                                    <li class="swith-img swith-img-prev" data-id="3">
+                                        <a href=""><img src="img/home/li1.jpg" alt=""></a>
+                                    </li>
+                                    <li class="swith-img swith-img-active">
+                                        <a href=""><img src="img/home/li2.jpg" alt=""></a>
+                                    </li>
+                                    <li class="swith-img swith-img-next">
+                                        <a href=""><img src="img/home/li3.jpg" alt=""></a>
+                                    </li>
+                                    <li class="swith-img">
+                                        <a href=""><img src="img/home/li4.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                                <div class="gray"></div>
+                            </div>
+                            <!-- 倒计时 -->
+                            <div class="timeout-wrap">
+                                <span class="title">
+                                <i class="home-icon hi-timeout"></i>
+                                距离结束
+                            </span>
+                                <span class="time hours">00</span>
+                                <span class="txt">:</span>
+                                <span class="time minutes">00</span>
+                                <span class="txt">:</span>
+                                <span class="time seconds">00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 全球必买清单 -->
+                    <div class="mod mod-global-must-buy">
+                        <!-- 头部文字 -->
+                        <div class="mod-hd">
+                            <i class="home-icon hi-must-buy"></i>
+                            <span class="title">全球必买清单</span>
+                            <a href="" class="more">
+                            更多<i class="home-icon hi-more"></i>
+                        </a>
+                        </div>
+                        <div class="mod-bd">
+                            <ul class="must-buy-list">
+                                <li class="item">
+                                    <a href="">
+                                        <div class="mb-l must-buy-bg0">
+                                            <div class="mbl-fill">
+                                                <div class="fill">只需十分钟，教你化个心机妆</div>
+                                                <div class="desc">
+                                                    <span class="seller">来自 21 位买手</span>
+                                                    <span>35 件商品</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="mb-r">
+                                        <ul class="product-list">
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h1.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">Mistine泰国彩妆24小时超长持久粉底液</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>29
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/t.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    泰国
+                                                </span>
+                                                </p>
+                                            </li>
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h2.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">【葡挞妈咪自用款】Mistine泰国彩妆 COSMO瓷肌粉饼SPF25打底定妆</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>29.9
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/t.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    泰国
+                                                </span>
+                                                </p>
+                                            </li>
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h3.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">资生堂六角眉笔 不晕染持久防水防汗不脱色自然初学者</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>29
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/Japan.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    日本
+                                                </span>
+                                                </p>
+                                            </li>
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h4.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">莎娜SANA EXCEL三用眉笔 眉刷+眉粉+眉笔</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>139
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/Japan.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    日本
+                                                </span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <a href="">
+                                        <div class="mb-l must-buy-bg1">
+                                            <div class="mbl-fill">
+                                                <div class="fill">给肌肤补水，告别干燥肌 </div>
+                                                <div class="desc">
+                                                    <span class="seller">来自 2 位买手</span>
+                                                    <span>135 件商品</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="mb-r">
+                                        <ul class="product-list">
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h5.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">SANA 莎娜 豆乳乳液 柔滑美肌 清爽保湿 滋润肌肤 孕妇可用 150g</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>55
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/Japan.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    日本
+                                                </span>
+                                                </p>
+                                            </li>
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h6.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">Naturie薏仁啫喱面霜 精华美白补水保湿控油舒缓乳液 180g</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>59
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/Japan.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    日本
+                                                </span>
+                                                </p>
+                                            </li>
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h9.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">日本 芙丽芳丝freeplus氨基酸净润洗面奶洁面乳敏感肌 100g</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>109
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/Japan.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    日本
+                                                </span>
+                                                </p>
+                                            </li>
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h10.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">（2瓶特惠！）Vichy 薇姿 润泉舒缓喷雾 300ml*2 蕴含火山温泉水</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>89
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/France.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    法国
+                                                </span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <a href="">
+                                        <div class="mb-l must-buy-bg2">
+                                            <div class="mbl-fill">
+                                                <div class="fill">眼影|魅力电眼的必备之选</div>
+                                                <div class="desc">
+                                                    <span class="seller">来自 1 位买手</span>
+                                                    <span>305 件商品</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="mb-r">
+                                        <ul class="product-list">
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h11.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">日本CANMAKE井田 美容液精华泪袋卧蚕笔 眼影笔/遮瑕棒 遮瑕膏</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>45
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/Japan.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    日本
+                                                </span>
+                                                </p>
+                                            </li>
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h12.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">日本CANMAKE井田 ***雕刻裸妆五色眼影盘 细腻显色</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>65
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/Japan.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    日本
+                                                </span>
+                                                </p>
+                                            </li>
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h13.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">Real Techniques修容散粉刷RT初学者干粉刷化妆刷01715</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>198
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/America.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                    美国
+                                                </span>
+                                                </p>
+                                            </li>
+                                            <li class="product-item">
+                                                <a href="" class="product-img">
+                                                    <img src="img/home/h14.jpg" alt="" class="lazy">
+                                                </a>
+                                                <a href="">
+                                                    <p class="name lineClamp2">canmake井田花瓣腮红 cosme大赏</p>
+                                                </a>
+                                                <p class="price">
+                                                    <em class="unit">￥</em>68
+                                                </p>
+                                                <p class="country">
+                                                    <span class="country-sign">
+                                                    <img src="img/home/Japan.png" alt="">
+                                                </span>
+                                                    <span class="country-name">
+                                                   日本
+                                                </span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 分类 -->
+                    <div class="mod mod-category">
+                        <div class="mod-hd">
+                            <i class="home-icon hi-category"></i>
+                            <span class="title">分类</span>
+                            <a href="" class="more">
+                            更多
+                            <i class="home-icon hi-more"></i>
+                        </a>
+                        </div>
+                        <div class="mod-bd">
+                            <!-- 左 -->
+                            <div class="category-banner" id="cb-more">
+                                <div class="cb-item">
+                                    <a href="#" title="大牌包包">
+                                        <div class="cb-img" style="background-image: url(http://pic1.ymatou.com/G02/M0B/EC/41/CgvUA1lk31GAIpF4AABP6TDC4vk178_247_239_o.gif);"></div>
+                                        <span>大牌包包</span>
+                                    </a>
+                                </div>
+                                <div class="cb-item">
+                                    <a href="#" title="潮流服鞋">
+                                        <div class="cb-img" style="background-image: url(http://pic1.ymatou.com/G02/M0B/F3/19/CgvUBVlk3wuAHOWBAABGRlG4Cd4962_247_239_o.gif);"></div>
+                                        <span>潮流服鞋</span>
+                                    </a>
+                                </div>
+                                <div class="cb-item">
+                                    <a href="#" title="美颜护肤">
+                                        <div class="cb-img" style="background-image: url(http://pic1.ymatou.com/G02/M02/F3/2D/CgvUBVlk4Q2AbxSiAADt632ES9M636_461_486_o.gif);"></div>
+                                        <span>美颜护肤</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 中 -->
+                            <div class="category-product" id="cp-more">
+                                <div class="cp-item">
+                                    <div class="cp-item-hd">
+                                        <h3 class="title">包治百病</h3>
+                                    </div>
+                                    <div class="cp-item-bd">
+                                        <a href="javascript:void(0)" class="cp-product" title="Tote包">
+                                            <p class="cp-img">
+                                                <img src="img/home/h15.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">Tote包</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h16.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">邮差包</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h17.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">手提包</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h18.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">Mini包</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h19.jpg" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">钱包卡包</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cp-item">
+                                    <div class="cp-item-hd">
+                                        <h3 class="title">美鞋不嫌多</h3>
+                                    </div>
+                                    <div class="cp-item-bd">
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h20.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">高跟鞋</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h21.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">小白鞋</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h22.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">明星同款</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h23.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">雪地靴</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h24.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">过膝靴</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cp-item">
+                                    <div class="cp-item-hd">
+                                        <h3 class="title">护肤要积极</h3>
+                                    </div>
+                                    <div class="cp-item-bd">
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h25.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">卸妆洁面</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h26.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">化妆水</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h27.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">精华液</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h29.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">乳液</p>
+                                        </a>
+                                        <a href="" class="cp-product">
+                                            <p class="cp-img">
+                                                <img src="img/home/h30.png" class="lazy" alt="">
+                                            </p>
+                                            <p class="cp-name">面膜</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 右 -->
+                            <div class="category-topic">
+                                <div class="ct-hd">
+                                    <h3 class="title">热门主题</h3>
+                                </div>
+                                <div class="ct-bd">
+                                    <a href="">给肌肤补水，告别干燥肌 </a>
+                                    <a href="">买口红是病，但是我不想治！</a>
+                                </div>
+                            </div>
+                            <!-- 品牌轮播 -->
+                            <div class="brand-list" id="bran">
+                                <div class="bl-item">
+                                    <span class="bl-prev prev">
+                                    <i class="home-icon hi-prev-small"></i>
+                                </span>
+                                    <span class="bl-next next">
+                                    <i class="home-icon hi-next-small"></i>
+                                </span>
+                                    <div class="bl-item-bd slide-content">
+                                        <div class="cont-ban">
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban1.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">路易·威登</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban2.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">香奈儿</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban3.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">普拉达</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban4.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">克洛伊</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban5.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">芙拉</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban6.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">赛琳</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban7.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">蔻驰</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban8.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">迈克.高仕</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bl-item-ft">包包</div>
+                                </div>
+                                <div class="bl-item">
+                                    <span class="bl-prev prev2">
+                                    <i class="home-icon hi-prev-small"></i>
+                                </span>
+                                    <span class="bl-next next2">
+                                    <i class="home-icon hi-next-small"></i>
+                                </span>
+                                    <div class="bl-item-bd slide-content">
+                                        <div class="cont-ban2">
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban9.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">浪凡</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban10.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">范思哲</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban11.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">品高</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban12.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">asos</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban13.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">sandro</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban14.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">Max Mara</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban15.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">maje</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban16.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">香蕉共和国</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bl-item-ft">裙装</div>
+                                </div>
+                                <div class="bl-item">
+                                    <span class="bl-prev prev3">
+                                    <i class="home-icon hi-prev-small"></i>
+                                </span>
+                                    <span class="bl-next next3">
+                                    <i class="home-icon hi-next-small"></i>
+                                </span>
+                                    <div class="bl-item-bd slide-content">
+                                        <div class="cont-ban3">
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban17.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">菲拉格慕</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban18.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">周仰杰</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban19.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">玖熙</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban20.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">科迪斯</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban21.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">罗杰维维亚</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban22.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">芬迪</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban23.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">华伦天奴</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban24.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">史蒂夫•马登</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bl-item-ft">美鞋</div>
+                                </div>
+                                <div class="bl-item">
+                                    <span class="bl-prev prev4">
+                                    <i class="home-icon hi-prev-small"></i>
+                                </span>
+                                    <span class="bl-next next4">
+                                    <i class="home-icon hi-next-small"></i>
+                                </span>
+                                    <div class="bl-item-bd slide-content">
+                                        <div class="cont-ban4">
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban25.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">SK-II</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban26.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">肌肤之钥</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban27.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">黛珂</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban28.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">资生堂</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban29.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">高丝</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban30.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">芳珂</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban31.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">奥尔滨</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban32.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">嘉娜宝</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bl-item-ft">日本药妆</div>
+                                </div>
+                                <div class="bl-item">
+                                    <span class="bl-prev prev5">
+                                    <i class="home-icon hi-prev-small"></i>
+                                </span>
+                                    <span class="bl-next next5">
+                                    <i class="home-icon hi-next-small"></i>
+                                </span>
+                                    <div class="bl-item-bd slide-content">
+                                        <div class="cont-ban5">
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban33.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">赫拉</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban34.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">兰芝</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban35.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">悦诗风吟</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban36.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">梦妆</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban37.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">后</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban38.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">雪花秀</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban39.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">呼吸</p>
+                                            </a>
+                                            <a href="">
+                                                <p class="bl-img">
+                                                    <img src="img/home/ban40.png" alt="" class="lazy">
+                                                </p>
+                                                <p class="bl-name">伊思</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bl-item-ft">韩式护肤</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 热卖地 -->
+                    <div class="mod mod-hot-site">
+                        <div class="mod-hd">
+                            <i class="home-icon hi-hot-site"></i>
+                            <span class="title">热卖地</span>
+                        </div>
+                        <div class="mod-bd">
+                            <div class="hot-site-list">
+                                <a href="" class="site-item beimei">
+                                    <i class="home-icon hi-beimei"></i>
+                                </a>
+                                <a href="" class="site-item ouzhou">
+                                    <i class="home-icon hi-ouzhou"></i>
+                                </a>
+                                <a href="" class="site-item yazhou">
+                                    <i class="home-icon hi-yazhou"></i>
+                                </a>
+                                <a href="" class="site-item aoxin">
+                                    <i class="home-icon hi-aoxin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 猜你喜欢 -->
+                    <div class="mod mod-like">
+                        <div class="mod-hd">
+                            <i class="home-icon hi-like"></i>
+                            <span class="title">猜你喜欢</span>
+                        </div>
+                        <div class="mod-bd">
+                            <ul class="product-list like-nav">
+                                <!-- <li class="product-item">
+                                <a href="" class="product-img">
+                                    <img src="img/home/h14.jpg" class="lazy" alt="">
+                                </a>
+                                <a href="">
+                                    <p class="name lineClamp2">英国星星耳环银简约个性气质设计感耳钉气质学生2020新款潮耳饰女</p>
+                                </a>
+                                <p class="price">
+                                    <em class="unit">￥</em>
+                                    99
+                                </p>
+                            </li> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- 点击加载更多 -->
+                    <div class="loading-more" onclick="more()">点击加载更多</div>
+                </div>
+            </div>
+            <!-- 底部 -->
+            <div class="wrapper footer">
+                <div class="matou-server">
+                    <a href="" class="matou-server-link" style="color: #fff;">
+                        <img src="img/footer/1.png" alt="">
+                    </a>
+                </div>
+                <div class="area">
+                    <div class="bottom_list">
+                        <ul class="dl">
+                            <li class="dt">购物指南</li>
+                            <li>注册与登录</li>
+                            <li>账户信息维护</li>
+                            <li>购物流程</li>
+                            <li>会员体系</li>
+                            <li>常见问题</li>
+                        </ul>
+                        <ul class="dl">
+                            <li class="dt">订单服务</li>
+                            <li>订单状态说明</li>
+                            <li>自动取消订单</li>
+                            <li>上传身份证</li>
+                        </ul>
+                        <ul class="dl">
+                            <li class="dt">支付与配送</li>
+                            <li>支付方式</li>
+                            <li>优惠券和红包</li>
+                            <li>如何提现</li>
+                            <li>配送方式</li>
+                        </ul>
+                        <ul class="dl">
+                            <li class="dt">售后服务</li>
+                            <li>消费维权</li>
+                            <li>纠纷处理规则</li>
+                            <li>退货规则</li>
+                        </ul>
+                        <div class="dl last">
+                            <div class="dt">官方微信</div>
+                            <p><img src="img/footer/2.png" alt=""></p>
+                            <span class="weibobox">
+                            <a href="">关注微博</a>
+                            <a href=""><span class="ico-weibo-png"></span></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="matou-intro">
+                        <a href="">关于码头</a>
+                        <a href="">码头招聘</a>
+                        <a href="">网站地图</a>
+                        <a href="">所有帮助</a>
+                        <a href="">海外招商中心</a>
+                        <a href="">扫货买手规则</a>
+                        <a href="" class="last">卖家常见问题</a>
+                    </div>
+                    <ul class="matou-link">
+                        <a href="">55bbs我爱购物网</a>
+                        <a href="">篱笆网</a>
+                        <a href="">闺蜜网</a>
+                        <a href="">名品导购网</a>
+                        <a href="">瑞丽女性网</a>
+                        <a href="">起点中文网</a>
+                        <a href="">起点女生网</a>
+                        <a href="">酷6网</a>
+                        <a href="">太平洋返利网</a>
+                        <a href="">海外折扣拼团</a>
+                        <a href="">韩都衣舍</a>
+                        <a href="">嘉年乐</a>
+                        <a href="">为为网购商城</a>
+                        <a href="">同城购物网</a>
+                        <a href="">齐家网</a>
+                        <a href="">网上商城</a>
+                        <a href="">礼品公司</a>
+                        <a href="">留学服务公司</a>
+                        <a href="">礼派</a>
+                        <a href="">快易拍</a>
+                        <a href="">手表</a>
+                        <a href="">卡当创意礼物</a>
+                        <a href="">户外装备</a>
+                        <a href="">母婴展</a>
+                        <a href="">微财富理财</a>
+                        <a href="">更多>></a>
+                    </ul>
+                    <div class="friendLinks">
+                        <a href="" class="linkitem icon-kexin"></a>
+                        <span class="linkitem icon-zhifubao"></span>
+                        <a href="" class="linkitem icon-wangjing"></a>
+                        <a href="" class="linkitem icon-gongshang3"></a>
+                    </div>
+                    <div class="copywrite copyright">
+                        © 2009－2019 ymatou.com, All rights reserved 增值电信业务经营许可证：沪B2-20140021 <br> 上海洋码头网络技术有限公司 版权所有 备案号（ 沪ICP备11050082号 ） <br> 上海市静安区江场三路93号13层
+                    </div>
+                    <div class="friendLinks2">
+                        <div class="friendLinks" style="float: left;width: 66px;
+                    ">
+                            <a href="" class="linkitem icon-gongshang"></a>
+                        </div>
+                        <a href="" class="beian-banner">
+                            <i class="beian"></i>
+                            <p class="beian-txt">沪公网安备 31010802001410号</p>
+                        </a>
+                        <span class="split">|</span>
+                        <span class="link-item">违法不良信息举报电话：021-80185223</span>
+                        <span class="split">|</span>
+                        <a href="" class="link-item">
+                            <span class="jbzxIcon"></span>
+                            <span>上海市互联网上海市互联网举报中心</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // 设置搜索框的显示与隐藏
+            $(".input-search").focus(() => {
+                $(".search-recomend").show()
+            })
+            $(".input-search").blur(() => {
+                    $(".search-recomend").hide()
+                })
+                // 设置分类模块的显示与隐藏
+            $(".category-box").hover(() => {
+                $(".current").addClass('select')
+                if ($(".category-downlist").css("display") == 'none') {
+                    $(".current").removeClass('select')
+                }
+            })
+            $(".current").hover(() => {
+                    if ($(".category-downlist").css("display") == 'none') {
+                        $(".current").removeClass('select')
+                    }
+                })
+                //限时抢轮播图
+            $("#btn-prev").click(() => {
+                var i = $(".swith-img-active").index()
+                $("#xbanner li").eq(i).removeClass('swith-img-active')
+                $("#xbanner li").eq(i).addClass('swith-img-prev')
+                $("#xbanner li").eq(i).prev().removeClass('swith-img-prev')
+                $("#xbanner li").eq($(".swith-img-next").index()).next().addClass('swith-img-next')
+                $("#xbanner li").eq(i).next().removeClass('swith-img-next')
+                $("#xbanner li").eq(i).next().addClass('swith-img-active')
+                if (i == 2) {
+                    $("#xbanner li").first().addClass('swith-img-next')
+                }
+                if (i == 3) {
+                    $("#xbanner li").eq(1).addClass('swith-img-next')
+                    $("#xbanner li").eq(0).addClass('swith-img-active')
+                    $("#xbanner li").eq(0).removeClass('swith-img-next')
+                    $("#xbanner li").eq(3).removeClass('swith-img-active')
+                    $("#xbanner li").eq(3).prev().removeClass('swith-img-prev')
+                }
+                if (i == 0) {
+                    $("#xbanner li").last().removeClass('swith-img-prev')
+                    $("#xbanner li").eq(0).addClass('swith-img-prev')
+                }
+            })
+            $("#btn-next").click(() => {
+                    var i = $(".swith-img-active").index()
+                    $("#xbanner li").eq(i).removeClass('swith-img-active')
+                    $("#xbanner li").eq(i).addClass('swith-img-next')
+                    $("#xbanner li").eq(i).next().removeClass('swith-img-next')
+                    $("#xbanner li").eq($(".swith-img-prev").index()).prev().addClass('swith-img-prev')
+                    $("#xbanner li").eq(i).prev().removeClass('swith-img-prev')
+                    $("#xbanner li").eq(i).prev().addClass('swith-img-active')
+                    if (i == 1) {
+                        $("#xbanner li").last().addClass('swith-img-prev')
+                    }
+                    if (i == 0) {
+                        $("#xbanner li").eq(2).addClass('swith-img-prev')
+                        $("#xbanner li").last().addClass('swith-img-active')
+                        $("#xbanner li").last().removeClass('swith-img-prev')
+                        $("#xbanner li").first().removeClass('swith-img-active')
+                        $("#xbanner li").first().addClass('swith-img-next')
+                        $("#xbanner li").eq(1).removeClass('swith-img-next')
+                    }
+                    if (i == 3) {
+                        $("#xbanner li").first().removeClass('swith-img-next')
+                    }
+                })
+                // 倒计时
+            var maxtime = 60 * 60;
+
+            function CountDown() {
+                if (maxtime >= 0) {
+                    // hours=Math.floor(maxtime / 3600)
+                    minutes = Math.floor(maxtime / 60)
+                    seconds = Math.floor(maxtime % 60)
+                    $(".minutes").html(minutes)
+                    $(".seconds").html(seconds)
+                        --maxtime
+                } else {
+                    clearInterval(timer);
+                }
+
+            }
+            timer = setInterval("CountDown()", 1000);
+            // 分类轮播图
+            $(".brand-list .prev").click(() => {
+                $(".cont-ban").toggleClass("dis")
+            })
+            $(".brand-list .next").click(() => {
+                $(".cont-ban").toggleClass("dis")
+            })
+            $(".brand-list .prev2").click(() => {
+                $(".cont-ban2").toggleClass("dis")
+            })
+            $(".brand-list .next2").click(() => {
+                $(".cont-ban2").toggleClass("dis")
+            })
+            $(".brand-list .prev3").click(() => {
+                $(".cont-ban3").toggleClass("dis")
+            })
+            $(".brand-list .next3").click(() => {
+                $(".cont-ban3").toggleClass("dis")
+            })
+            $(".brand-list .prev4").click(() => {
+                $(".cont-ban4").toggleClass("dis")
+            })
+            $(".brand-list .next4").click(() => {
+                $(".cont-ban4").toggleClass("dis")
+            })
+            $(".brand-list .prev5").click(() => {
+                $(".cont-ban5").toggleClass("dis")
+            })
+            $(".brand-list .next5").click(() => {
+                    $(".cont-ban5").toggleClass("dis")
+                })
+                // 猜你喜欢，加载商品
+            function like(a) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('get', 'http://localhost/ymatou/PHP/x.php?page=' + a, true);
+                xhr.send();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var data = JSON.parse(xhr.responseText);
+                        // console.log(data)
+                        for (var i = 0; i <= data.length - 1; i++) {
+                            $(".like-nav").append(`
+                            <li class="product-item">
+                                <a href="detail.html?id=${data[i].id}" class="product-img">
+                                    <img src="${data[i].url}" class="lazy" alt="">
+                                </a>
+                                <a href="detail.html?id=${data[i].id}">
+                                    <p class="name lineClamp2">${data[i].name}</p>
+                                </a>
+                                <p class="price">
+                                    <em class="unit">￥</em>
+                                    ${data[i].price}
+                                </p>
+                            </li>
+                        `)
+                        }
+                    }
+                }
+            }
+            like(0);
+            var m = 0;
+
+            function more() {
+                m += 5;
+                like(m)
+            }
+        // 分区跳转
+        $(".category-box a").click(function () {
+            window.location.href="skin.html?t="+$(this)[0].title;
+        })
+        // 搜索框判断
+        $("#but").click(()=>{
+            if($("#ipt").val()==""){
+                alert("请输入搜索内容！！！")
+                event.preventDefault();
+            }
+        })
+        // 分类模块跳转
+        $("#cb-more a").click((e)=>{
+            window.open("search.html?key=" + e.target.innerHTML)
+        })
+        $("#cp-more a").click((e)=>{
+            window.open("search.html?key=" + e.target.innerHTML)
+        })
+        $("#bran").click(()=>{
+            window.open("class_more.html")
+        })
+
+        // 用户本地存储
+        var na = decodeURI(window.location.search.split("=")[1]);
+        // console.log(na)
+        if(na=="undefined"){
+            $(".us").show();
+            $(".head-d").remove()
+            $(".head-shopping a").attr("href","login.html")
+            $(".head-order a").attr("href","login.html")
+            $(".head-per a").attr("href","login.html")
+        }else{
+            sessionStorage.name=na;
+        }
+        // 判断是否登录
+        var n=sessionStorage.name;
+        // console.log(n);
+        if(n){
+            $(".us").hide()
+            $(".usa").prepend(`
+                <li class="nav-item head-d">
+                    <a href="" class="downmenu">
+                        <span class="title">${n}</span>
+                        <i class="arrow-bt"></i>
+                    </a>
+                    <div class="dropdownlist">
+                        <a href="#" onclick='esc()'">退出登录</a>
+                    </div>
+                </li>
+            `)
+            // 判断是否登录来确定网页跳转的页面
+            $(".head-shopping a").attr("href","shopping.html")
+            $(".head-order a").attr("href","order_form.html")
+            $(".head-per a").attr("href","personal.html")
+        }else{
+            $(".head-shopping a").attr("href","login.html")
+            $(".head-order a").attr("href","login.html")
+            $(".head-per a").attr("href","login.html")
+        }
+        // 退出登录
+        function esc(){
+            sessionStorage.removeItem('name')
+            $(".us").show();
+            $(".head-d").remove()
+            $(".head-shopping a").attr("href","login.html")
+            $(".head-order a").attr("href","login.html")
+            $(".head-per a").attr("href","login.html")
+        }
+        </script>
+</body>
+</html>

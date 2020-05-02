@@ -1,0 +1,97 @@
+/* 分类==》更多 (左部分)*/
+.class_more{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.class_more .more_left{
+    margin-top: 13px;
+    /* 清除浮动 */
+    overflow: hidden;
+    
+}
+.class_more .more_left .more_lists{
+    width: 1000px;
+    background-color: #f2f2f2;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.more_lists .more_title{
+    margin: 20px;
+    font-size: 14px;
+    color: #383838;
+    text-align: left;
+    font-weight: 700;
+   
+}
+.more_lists .more_items{
+    margin: 0 auto;
+    width: 960px;
+    color: #646464;
+    line-height: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dedede;
+   
+}
+.more_lists .more_items .more_itemlists{
+    text-align: left;
+}
+.more_lists .more_items .more_itemlists>a{
+    color: #383838;
+    font-weight: 700;
+}
+.more_lists .more_items .more_itemlists>a:hover{
+    color: #c33;
+}
+.more_lists .more_items .more_itemlists .itemlists_ch{
+    padding-bottom: 7px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 17px;
+}
+/* 右侧导航栏 */
+/* .more_right{
+    width: 160px;
+ 
+    border: 1px solid #dedede;
+   
+} */
+.abnav{    
+    width: 160px;
+    right: -172px;
+    border: 1px solid #dedede;
+    background: #fff;
+    position: absolute;
+    right: -172px;
+    top: 30px;
+}
+.fixnav{
+    width: 160px;
+    left: 50%;
+    margin-left: 510px;
+    border: 1px solid #dedede;
+    position: fixed;
+    top: 0;
+}
+.bot_nav{
+    width: 160px;
+    right: -172px;
+    border: 1px solid #dedede;
+    background: #fff;
+    position: absolute;
+    right: -172px;
+    top: 6367px;
+}
+.moreright_nav{
+    width: 110px;
+    margin: 0 auto;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 2px dotted #dedede;
+}
+.moreright_nav a{
+    cursor: pointer;
+}
+/* 滚动对应模块 导航条发生高亮 */
+.nav_col{
+    color: #c33;
+}

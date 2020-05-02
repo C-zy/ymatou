@@ -1,0 +1,292 @@
+.chearfix:after{
+    content: "";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    display: block;
+}
+.mainer{
+    min-width: 1200px;
+}
+.search-category{
+position: relative;
+    margin-top: 30px;
+    width: 1200px;
+    height: 140px;
+    margin-bottom: 20px;
+    background: url(https://s2.ymatou.com/plist/1ae6f7b349bf33d06a7ab42b49ff3994.png);
+}
+.search-opertaion .title{
+    font-size: 27px;
+    color: #383838;
+    letter-spacing: 4px;
+    padding: 0 20px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 26px;
+    font-weight: 700;
+  
+}
+.search-opertaion .title-bg{
+    background: url(https://s2.ymatou.com/plist/e84dbb88d5bbc42abdd98296ff253dea.png) no-repeat 50%;
+    width: 558px;
+    height: 107px;
+    position: absolute;
+    left: 50%;
+    margin-left: -279px;
+    top: 19px;
+    opacity: .75;
+}
+.title-line-left{
+    background: url(https://s2.ymatou.com/plist/ecda14931440d4ad02d77bf8fe32da92.png) no-repeat 50%;
+    display: inline-block;
+    width: 55px;
+    height: 8px;
+    vertical-align: middle;
+    margin-top: 30px;
+}
+.title-line-right{
+    background: url(https://s2.ymatou.com/plist/1b4b6721bc5ae1d99bbc5fd67851a788.png) no-repeat 50%;
+    display: inline-block;
+    width: 55px;
+    height: 7px;
+    vertical-align: middle;
+    margin-top: 30px;
+}
+.search-crumbs{
+
+    border-top: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    text-align: left;
+    padding: 5px 0 4px 30px;
+    color: #9b9b9b;
+}
+.search-crumbs a{
+    color: #383838;
+    padding: 0 10px;
+}
+.home-icon{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    /* vertical-align: middle; */
+}
+.search-opertaion .key {
+    width: 105px;
+    float: left;
+    padding-left: 15px;
+    line-height: 35px;
+}
+.search-opertaion .search-item {
+    background-color: #f8f8f8;
+    border-top: 1px solid #dedede;
+    overflow: hidden;
+    text-align: left;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+}
+.search-opertaion .value {
+    width: 1058px;
+    float: left;
+    background-color: #fff;
+    position: relative;
+    padding-right: 20px;
+
+}
+.search-opertaion .value .value-item {
+    display: inline-block;
+    height: 24px;
+    margin: 5px 0 4px 30px;
+    line-height: 22px;
+    vertical-align: top;
+}
+.search-opertaion .user-defined {
+    float: left;
+    padding-left: 30px;
+    margin: 5px 0 0 30px;
+    border-left: 1px solid #dedede;
+    color: #cecece;
+}
+.search-opertaion .user-defined .input-defined {
+    position: relative;
+    width: 78px;
+    height: 22px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    display: inline-block;
+ 
+}
+.search-opertaion .user-defined .input-price {
+    border: 0;
+    margin-left: 5px;
+    width: 50px;
+    height: 100%;
+}
+.search-opertaion .user-defined .disabled {
+    background: #dedede;
+}
+.search-opertaion .user-defined .comfirm-price {
+    font-size: 12px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+
+    height: 24px;
+    width: 40px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+.search-opertaion .sort-type .checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    vertical-align: middle;
+    margin-top: -1px;
+    position: relative;
+    margin-left: 25px;
+}
+.search-opertaion .sort-type .txt {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.search-opertaion {
+    border-bottom: 1px solid #dedede;
+    margin-top: 30px;
+}
+.search-result .search-sort {
+    border: 1px solid #dedede;
+    height: 33px;
+}
+.search-result .search-sort .sort {
+    width: 120px;
+    background-color: #ffe8e7;
+    text-align: center;
+    line-height: 33px;
+    float: left;
+    border-right: 1px solid #dedede;
+}
+ 
+.search-sort .sort-type .checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    vertical-align: middle;
+    margin-top: -1px;
+    position: relative;
+    margin-left: 25px;
+}
+.search-result {
+    margin-top: 20px;
+}
+.search-list {
+    margin-top: 10px;
+}
+.search-list .product-list {
+    margin-left: -10px;
+    /* height: 350px; */
+    overflow: hidden;
+}
+ol,ul{
+    list-style: none;
+}
+.search-list .product-list .product-item {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 320px;
+    position: relative;
+}
+.product-list .product-item {
+    width: 212px;
+    float: left;
+    font-size: 14px;
+    padding: 9px;
+    border: 1px solid #dedede;
+    text-align: left;
+}
+.product-list .product-img img {
+    height: 212px;
+    width: 212px;
+}
+.product-list .product-img {
+    width: 212px;
+    height: 212px;
+    line-height: 212px;
+    text-align: center;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.search-list .product-list .price {
+    position: relative;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.product-list .price {
+    color: #c33;
+    font-weight: 700;
+}
+.product-list .unit {
+    padding-right: 3px;
+}
+.search-list .product-list .type {
+    position: absolute;
+    right: -3px;
+    top: -2px;
+}
+.search-list .product-list .type em {
+    height: 16px;
+    border: 1px solid #c33;
+    border-radius: 3px;
+    padding: 0 5px;
+    line-height: 16px;
+    display: inline-block;
+
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 3px;
+    color: #c33;
+}
+b, cite, em, i {
+    font-style: normal;
+}
+.search-list .product-list .seller-site {
+    position: relative;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.search-list .product-list .seller-site .seller .avatar {
+    position: relative;
+}
+.search-list .product-list .seller-site .avatar {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    overflow: hidden;
+}
+.search-list .product-list .seller-site .avatar img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.search-list .product-list .seller-site .seller .txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    width: 70px;
+}
+.search-list .product-list .seller-site .seller .txt, .search-list .product-list .seller-site .site .txt {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+.search-list .product-list .seller-site .site {
+    position: absolute;
+    right: 0;
+}

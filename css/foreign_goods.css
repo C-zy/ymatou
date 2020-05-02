@@ -1,0 +1,112 @@
+.foreign_goods {
+    width: 100%;
+    height: 100%;
+}
+
+.foreign_goods_0 {
+    width: 100%;
+    height: 120px;
+    background-color: #FF3C6E;
+}
+
+.foreign_goods_1 {
+    width: 1200px;
+    height: 120px;
+    margin: auto;
+    background-image: url(../img/foreign_goods/bg-1.png);
+}
+
+.foreign_goods_2 {
+    width: 1200px;
+    box-sizing: border-box;
+    height: 60px;
+    border-bottom: 2px solid #CC3333;
+    margin: 20px auto;
+}
+
+.foreign_goods_2 p {
+    width: 250px;
+    height: 60px;
+    background-color: #000;
+    color: #FFF;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.foreign_goods_3 {
+    width: 1200px;
+    margin: auto;
+}
+
+.foreign_goods_3 li {
+    width: 1200px;
+    height: 655px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.foreign_goods_3 li .div_img {
+    width: 593.4px;
+    height: 316px;
+    float: left;
+    margin-right: 6px;
+    margin-bottom: 10px;
+}
+
+.foreign_goods_3 li .div_img img {
+    width: 100%;
+}
+
+.foreign_goods_3 li .div_box {
+    margin-right: 6.5px;
+    margin-bottom: 10px;
+    height: 315px;
+    position: relative;
+    width: 191px;
+    float: left;
+    font-size: 14px;
+    border: 1px solid #dedede;
+    text-align: left;
+}
+
+.foreign_goods_3 li .div_box img {
+    width: 100%;
+    height: 190.5px;
+}
+
+.foreign_goods_3 li .div_box .p_price {
+    text-align: left;
+    color: #c33;
+    margin-top: 9.5px;
+    font-size: 22px;
+}
+
+.foreign_goods_3 li .div_box .p_name {
+    color: #262626;
+    margin-top: 8px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.foreign_goods_3 li .div_more {
+    background: url(../img/foreign_goods/bg-5.png);
+    margin-right: 6.5px;
+    margin-bottom: 10px;
+    height: 315px;
+    position: relative;
+    width: 191px;
+    float: left;
+    font-size: 14px;
+    border: 1px solid #dedede;
+    text-align: left;
+}
+
+.div_more img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*# sourceMappingURL=foreign_goods.css.map */

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洋码头 - 让人放心的海外购物社区货 - 购物车</title>
+    <link rel="stylesheet" href="css/shopping.css">
+    <link rel="stylesheet" href="css/cart_footer.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 网页顶部 -->
+    <div class="wrap">
+        <div class="wrap topbar">
+            <div class="inner">
+                <div class="topnar-fl">
+                    <a href="">Hi，欢迎来到洋码头！</a>
+                    <span class="user-type" style="padding-left: 10px;display: inline-block;">
+                        <a href="">我是买手</a>
+                    </span>
+                </div>
+                <ul class="nav topbar-fr usa">
+                    <li class="nav-item us">
+                        <a href="login.html"><span class="title">登录</span></a>
+                    </li>
+                    <li class="nav-item us">
+                        <a href="register.html"><span class="title">注册</span></a>
+                    </li>
+                    <li class="nav-item head-shopping">
+                        <a href="#"><span class="title">购物车</span></a>
+                    </li>
+                    <li class="nav-item head-order">
+                        <a href="order_form.html"><span class="title">我的订单</span></a>
+                    </li>
+                    <li class="nav-item head-per">
+                        <a href="personal.html"><span class="title">个人中心</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gonggao.html"><span class="title">规则&公告</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 网页右导航栏 -->
+        <div class="rightbar">
+            <ul class="rightbar-inner" style="padding:270px 0 0;">
+                <li class="item user head-per"><a href="personal.html"><i class="rightbar-icon rti-user"></i></a></li>
+                <li class="item head-shopping">
+                    <a href="" style="padding-bottom: 2px;">
+                        <i class="rightbar-icon rti-cart"></i><span class="title">
+                            购<br>物<br>车
+                        </span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;">
+                        <i class="rightbar-icon rti-code"></i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;" onclick="
+                    javascript:document.documentElement.scrollTop = document.body.scrollTop =0">
+                        <i class="rightbar-icon rti-top"></i>
+                        <span class="title">TOP</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 购物车部分 -->
+        <div class="login wrap clearfix">
+            <a href="index.html" class="login_a"></a>
+            <span class="loginTitle">购物车</span>
+            <div class="shopping_flow clearfix">
+                <div class="left-1">
+                    <span class="circle">1</span>
+                    <span>我的购物车</span>
+                </div>
+                <div class="right_one"></div>
+                <div class="left_one"></div>
+                <div class="left-2">
+                    <span class="red">2</span>
+                    <span class="gray iconfont">提交订单</span>
+                </div>
+                <div class="right_two"></div>
+                <div class="left_one"></div>
+                <div class="left-3">
+                    <span class="red">3</span>
+                    <span class="gray">选择支付方式</span>
+                </div>
+            </div>
+        </div>
+        <div class="wrap cart">
+            <div class="wrap cartTitle">
+                <span>全部商品 <font id="font-num">0</font></span>
+            </div>
+            <div class="cart_img">
+                <div>
+                    <span>购物车还是空空的呢,<a href="javascript:void(0)" id="stroll">快去逛逛吧<span
+                                class="iconfont  icon-jiantouyou"></span></a></span>
+                </div>
+
+            </div>
+            <div>
+                <div class="cart_p1-title">
+                    <p class="cart_p1">海外买手会根据现行国家政策要求，通过不同的物流方式分别发货，其实对你没有影响啦~</p>
+                    <div class="table_title">
+                        <span class="span1"><input type="checkbox" class="checkbox1">全选</span>
+                        <span class="span2">商品信息</span>
+                        <span class="span3">单价(元)</span>
+                        <span class="span4">数量</span>
+                        <span class="span5">金额(元)</span>
+                        <span class="span6">操作</span>
+                    </div>
+                </div>
+                <div id="cart_gain" class="clearfix">
+                </div>
+                <div class="account">
+                    <span class="span1"><input type="checkbox" class="checkbox4">全选</span>
+                    <span class="del-opt">删除选中商品</span>
+                    <span class="close">
+                        已选
+                        <em id="select-num">0</em>件商品,总价为
+                        <span class="count">
+                            ￥<em class="em-count">0.00</em>
+                        </span>
+                        <button class="close-count">结算</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- 猜你喜欢 -->
+        <div class="like_item clearfix inner">
+            <i class="like_item_img"></i>
+            <span>猜你喜欢</span>
+        </div>
+        <ul id="commodity" class="commodity clearfix">
+        </ul>
+    </div>
+    <!-- 底部 -->
+    <div class="wrapper footer">
+
+        <div class="matou-server">
+            <a href="" class="matou-server-link" style="color: #fff;">
+                <img src="img/footer/1.png" alt="">
+            </a>
+        </div>
+        <div class="area">
+            <div class="bottom_list">
+                <ul class="dl">
+                    <li class="dt">购物指南</li>
+                    <li class="dd">注册与登录</li>
+                    <li class="dd">账户信息维护</li>
+                    <li class="dd">购物流程</li>
+                    <li class="dd">会员体系</li>
+                    <li class="dd">常见问题</li>
+                </ul>
+                <ul class="dl">
+                    <li class="dt">订单服务</li>
+                    <li class="dd">订单状态说明</li>
+                    <li class="dd">自动取消订单</li>
+                    <li class="dd">上传身份证</li>
+                </ul>
+                <ul class="dl">
+                    <li class="dt">支付与配送</li>
+                    <li class="dd">支付方式</li>
+                    <li class="dd">优惠券和红包</li>
+                    <li class="dd">如何提现</li>
+                    <li class="dd">配送方式</li>
+                </ul>
+                <ul class="dl">
+                    <li class="dt">售后服务</li>
+                    <li class="dd">消费维权</li>
+                    <li class="dd">纠纷处理规则</li>
+                    <li class="dd">退货规则</li>
+                </ul>
+                <div class="dl last">
+                    <div class="dt">官方微信</div>
+                    <p><img src="img/footer/2.png" alt=""></p>
+                    <span class="weibobox">
+                        <a href="">关注微博</a>
+                        <a href=""><span class="ico-weibo-png"></span></a>
+                    </span>
+                </div>
+            </div>
+            <div class="matou-intro">
+                <a href="">关于码头</a>
+                <a href="">码头招聘</a>
+                <a href="">网站地图</a>
+                <a href="">所有帮助</a>
+                <a href="">海外招商中心</a>
+                <a href="">扫货买手规则</a>
+                <a href="" class="last">卖家常见问题</a>
+            </div>
+            <ul class="matou-link">
+                <a href="">55bbs我爱购物网</a>
+                <a href="">篱笆网</a>
+                <a href="">闺蜜网</a>
+                <a href="">名品导购网</a>
+                <a href="">瑞丽女性网</a>
+                <a href="">起点中文网</a>
+                <a href="">起点女生网</a>
+                <a href="">酷6网</a>
+                <a href="">太平洋返利网</a>
+                <a href="">海外折扣拼团</a>
+                <a href="">韩都衣舍</a>
+                <a href="">嘉年乐</a>
+                <a href="">为为网购商城</a>
+                <a href="">同城购物网</a>
+                <a href="">齐家网</a>
+                <a href="">网上商城</a>
+                <a href="">礼品公司</a>
+                <a href="">留学服务公司</a>
+                <a href="">礼派</a>
+                <a href="">快易拍</a>
+                <a href="">手表</a>
+                <a href="">卡当创意礼物</a>
+                <a href="">户外装备</a>
+                <a href="">母婴展</a>
+                <a href="">微财富理财</a>
+                <a href="">更多>></a>
+            </ul>
+            <div class="friendLinks">
+                <a href="" class="linkitem icon-kexin"></a>
+                <span class="linkitem icon-zhifubao"></span>
+                <a href="" class="linkitem icon-wangjing"></a>
+                <a href="" class="linkitem icon-gongshang3"></a>
+            </div>
+            <div class="copywrite copyright">
+                © 2009－2019 ymatou.com, All rights reserved 增值电信业务经营许可证：沪B2-20140021 <br>
+                上海洋码头网络技术有限公司 版权所有 备案号（ 沪ICP备11050082号 ） <br>
+                上海市静安区江场三路93号13层
+            </div>
+            <div class="friendLinks2">
+                <div class="friendLinks" style="float: left;width: 66px;
+                ">
+                    <a href="" class="linkitem icon-gongshang"></a>
+                </div>
+                <a href="" class="beian-banner">
+                    <i class="beian"></i>
+                    <p class="beian-txt">沪公网安备 31010802001410号</p>
+                </a>
+                <span class="split">|</span>
+                <span class="link-item">违法不良信息举报电话：021-80185223</span>
+                <span class="split">|</span>
+                <a href="" class="link-item">
+                    <span class="jbzxIcon"></span>
+                    <span>上海市互联网上海市互联网举报中心</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/shopping.js"></script>
+<script>
+    // 判断是否登录
+    var n=sessionStorage.name;
+        // console.log(n);
+        if(n){
+            $(".us").hide()
+            $(".usa").prepend(`
+                <li class="nav-item head-d">
+                    <a href="" class="downmenu">
+                        <span class="title">${n}</span>
+                        <i class="arrow-bt"></i>
+                    </a>
+                    <div class="dropdownlist">
+                        <a href="#" onclick='esc()'">退出登录</a>
+                    </div>
+                </li>
+            `)
+            // 判断是否登录来确定网页跳转的页面
+            $(".head-shopping a").attr("href","shopping.html")
+            $(".head-order a").attr("href","order_form.html")
+            $(".head-per a").attr("href","personal.html")
+        }else{
+            $(".head-shopping a").attr("href","login.html")
+            $(".head-order a").attr("href","login.html")
+            $(".head-per a").attr("href","login.html")
+        }
+        // 退出登录
+        function esc(){
+            sessionStorage.removeItem('name')
+            $(".us").show();
+            $(".head-d").remove()
+            $(".head-shopping a").attr("href","login.html")
+            $(".head-order a").attr("href","login.html")
+            $(".head-per a").attr("href","login.html")
+        }
+</script>
+</html>

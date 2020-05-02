@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/order_form.css">
+    <script src="js/jquery.min.js"></script>
+    <title>我的订单</title>
+</head>
+
+<body>
+    <!-- top -->
+    <div class="nav_top">
+        <div class="top_inner">
+            <div class="top_life fl">
+                <a href="index.html">Hi，欢迎来到洋码头！</a><span><a href="">我是买手</a></span>
+            </div>
+            <ul class="top_right fr">
+                <li class="fl user_name"><a href="personal.html">XXX先生</a>
+                    <i class="jt"></i>
+                    <span class="ts" id="esc">退出登录</span>
+                </li>
+                <li class="fl"><a href="shopping.html">购物车</a></li>
+                <li class="fl"><a href="">我的订单</a></li>
+                <li class="fl"><a href="personal.html">个人中心</a></li>
+                <li class="fl"><a href="gonggao.html">规则&公告</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="center">
+        <ul class="center_left fl">
+            <li class="title_1">
+                <a href="personal.html">
+                    <h3><em></em> 个人中心</h3>
+                </a>
+            </li>
+            <li class=" title"><em class="em_1"></em>服务查询</li>
+            <li class="bg red"><a href="order_form.html">我的订单</a></li>
+            <li class="bg"><a href="">我的优惠券</a></li>
+            <li class=" title"><em class="em_2"></em>账户管理</li>
+            <li class="bg"><a href="">安全中心</a></li>
+            <li class="bg"><a href="">管理收货地址</a></li>
+            <li class="bg"><a href="">提现</a></li>
+            <li class=" title"><em class="em_3"></em>关注中心</li>
+            <li class="bg"><a href="">我的收藏</a></li>
+        </ul>
+        <div class="center_right">
+            <ul class="tab">
+                <li class="tab_item active" id="all">
+                    全部订单<em class="num" id="num_all">0</em><em class="line"></em>
+                </li>
+                <li class="tab_item" id="dfk">
+                    待付款<em class="num" id="num_wait">0</em><em class="line"></em>
+                </li>
+                <li class="tab_item" id="djd">
+                    待接单<em class="num" id="num_car">0</em><em class="line"></em>
+                </li>
+                <li class="tab_item" id="dsh">
+                    待收货<em class="num">0</em><em class="line"></em>
+                </li>
+                <li class="tab_item" id="dpj">
+                    待评价<em class="num">0</em><em class="line"></em>
+                </li>
+            </ul>
+            <div class="center_center">
+                <table class="order_table">
+                    <tbody>
+                        <tr>
+                            <th class="product-info">商品</th>
+                            <th class="price">单价(元)</th>
+                            <th class="count">数量</th>
+                            <th class="product-operate">商品操作</th>
+                            <th class="sum">合计 (元)</th>
+                            <th class="trade-type">交易状态</th>
+                            <th class="order-operate">操作</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="add"></div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <!-- 网页右导航栏 -->
+        <div class="rightbar">
+            <ul class="rightbar-inner" style="padding:270px 0 0;">
+                <li class="item user"><a href=""><i class="rightbar-icon rti-user"></i></a></li>
+                <li class="item">
+                    <a href="#" style="padding-bottom: 2px;">
+                        <i class="rightbar-icon rti-cart"></i><span class="title">
+                            购<br>物<br>车
+                        </span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;">
+                        <i class="rightbar-icon rti-code"></i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;" onclick="
+                    javascript:document.documentElement.scrollTop = document.body.scrollTop =0">
+                        <i class="rightbar-icon rti-top"></i>
+                        <span class="title">TOP</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 底部 -->
+        <div class="wrapper footer">
+            <div class="matou-server">
+                <a href="" class="matou-server-link" style="color: #fff;">
+                    <img src="img/footer/1.png" alt="">
+                </a>
+            </div>
+            <div class="area">
+                <div class="bottom_list">
+                    <ul class="dl">
+                        <li class="dt">购物指南</li>
+                        <li>注册与登录</li>
+                        <li>账户信息维护</li>
+                        <li>购物流程</li>
+                        <li>会员体系</li>
+                        <li>常见问题</li>
+                    </ul>
+                    <ul class="dl">
+                        <li class="dt">订单服务</li>
+                        <li>订单状态说明</li>
+                        <li>自动取消订单</li>
+                        <li>上传身份证</li>
+                    </ul>
+                    <ul class="dl">
+                        <li class="dt">支付与配送</li>
+                        <li>支付方式</li>
+                        <li>优惠券和红包</li>
+                        <li>如何提现</li>
+                        <li>配送方式</li>
+                    </ul>
+                    <ul class="dl">
+                        <li class="dt">售后服务</li>
+                        <li>消费维权</li>
+                        <li>纠纷处理规则</li>
+                        <li>退货规则</li>
+                    </ul>
+                    <div class="dl last">
+                        <div class="dt">官方微信</div>
+                        <p><img src="img/footer/2.png" alt=""></p>
+                        <span class="weibobox">
+                            <a href="">关注微博</a>
+                            <a href=""><span class="ico-weibo-png"></span></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="matou-intro">
+                    <a href="">关于码头</a>
+                    <a href="">码头招聘</a>
+                    <a href="">网站地图</a>
+                    <a href="">所有帮助</a>
+                    <a href="">海外招商中心</a>
+                    <a href="">扫货买手规则</a>
+                    <a href="" class="last">卖家常见问题</a>
+                </div>
+                <ul class="matou-link">
+                    <a href="">55bbs我爱购物网</a>
+                    <a href="">篱笆网</a>
+                    <a href="">闺蜜网</a>
+                    <a href="">名品导购网</a>
+                    <a href="">瑞丽女性网</a>
+                    <a href="">起点中文网</a>
+                    <a href="">起点女生网</a>
+                    <a href="">酷6网</a>
+                    <a href="">太平洋返利网</a>
+                    <a href="">海外折扣拼团</a>
+                    <a href="">韩都衣舍</a>
+                    <a href="">嘉年乐</a>
+                    <a href="">为为网购商城</a>
+                    <a href="">同城购物网</a>
+                    <a href="">齐家网</a>
+                    <a href="">网上商城</a>
+                    <a href="">礼品公司</a>
+                    <a href="">留学服务公司</a>
+                    <a href="">礼派</a>
+                    <a href="">快易拍</a>
+                    <a href="">手表</a>
+                    <a href="">卡当创意礼物</a>
+                    <a href="">户外装备</a>
+                    <a href="">母婴展</a>
+                    <a href="">微财富理财</a>
+                    <a href="">更多>></a>
+                </ul>
+                <div class="friendLinks">
+                    <a href="" class="linkitem icon-kexin"></a>
+                    <span class="linkitem icon-zhifubao"></span>
+                    <a href="" class="linkitem icon-wangjing"></a>
+                    <a href="" class="linkitem icon-gongshang3"></a>
+                </div>
+                <div class="copywrite copyright">
+                    © 2009－2019 ymatou.com, All rights reserved 增值电信业务经营许可证：沪B2-20140021 <br> 上海洋码头网络技术有限公司 版权所有 备案号（ 沪ICP备11050082号 ） <br> 上海市静安区江场三路93号13层
+                </div>
+                <div class="friendLinks2">
+                    <div class="friendLinks" style="float: left;width: 66px;
+                ">
+                        <a href="" class="linkitem icon-gongshang"></a>
+                    </div>
+                    <a href="" class="beian-banner">
+                        <i class="beian"></i>
+                        <p class="beian-txt">沪公网安备 31010802001410号</p>
+                    </a>
+                    <span class="split">|</span>
+                    <span class="link-item">违法不良信息举报电话：021-80185223</span>
+                    <span class="split">|</span>
+                    <a href="" class="link-item">
+                        <span class="jbzxIcon"></span>
+                        <span>上海市互联网上海市互联网举报中心</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.tab_item').click(function() {
+        $(this).addClass('active').siblings('.tab_item').removeClass('active')
+    })
+    var add = document.getElementById('add')
+    var add_all = document.getElementById('order_add')
+        //全部订单
+    fn = function() {
+        $.get('http://localhost/ymatou/PHP/x4.php', function(text) {
+            text = JSON.parse(text)
+            if (null != text && "" != text) {
+                for (var i = 0; i < text.length; i++) {
+                    $('#num_all').text(text.length)
+                }
+                fn1();
+                fn2()
+            } else {
+                add.innerHTML += `<div class="more">查看更多订单</div>`
+            }
+        })
+    }
+    fn()
+    fn1 = function() {
+        //待付款
+        $.get('http://localhost/ymatou/PHP/x5.php', function(text) {
+            text = JSON.parse(text)
+            if (null != text && "" != text) {
+                for (var i = 0; i < text.length; i++) {
+                    $('#num_wait').text(text.length)
+                    add.innerHTML += `
+                    <table class="order_table" id="order_add">
+                        <tbody>
+                            <tr>
+                                <td class="product-info img"><img src="${text[i].url}" alt="">
+                                    <p class="name">${text[i].name}</p>
+                                </td>
+                                <td class="price">${text[i].price}</td>
+                                <td class="count">1</td>
+                                <td class="product-operate cz">删除</td>
+                                <td class="sum">${text[i].price}</td>
+                                <td class="trade-type zt">待付款</td>
+                                <td class="order-operate cz">删除</td>
+                            </tr>
+                        </tbody>
+                    </table>`
+                }
+            } else {
+                add.innerHTML += `<div class="more">查看更多订单</div>`
+            }
+        })
+    }
+    fn2 = function() {
+        //购物车（带接单）
+        $.get('http://localhost/ymatou/PHP/x3.php', function(text) {
+            text = JSON.parse(text)
+            if (null != text && "" != text) {
+                for (var i = 0; i < text.length; i++) {
+                    $('#num_car').text(text.length)
+                    add.innerHTML += `
+                    <table class="order_table" id="order_add">
+                        <tbody>
+                            <tr>
+                                <td class="product-info img"><img src="${text[i].url}" alt="">
+                                    <p class="name">${text[i].name}</p>
+                                </td>
+                                <td class="price">${text[i].price}</td>
+                                <td class="count">1</td>
+                                <td class="product-operate cz">删除</td>
+                                <td class="sum">${text[i].price}</td>
+                                <td class="trade-type zt">待接单</td>
+                                <td class="order-operate cz">删除</td>
+                            </tr>
+                        </tbody>
+                    </table>`
+                }
+            } else {
+                add.innerHTML += `<div class="more">查看更多订单</div>`
+            }
+        })
+    }
+    $('#all').click(function() {
+        add.innerHTML = ''
+        fn()
+    })
+    $('#dfk').click(function() {
+        add.innerHTML = ''
+        fn1()
+    })
+    $('#djd').click(function() {
+        add.innerHTML = ''
+        fn2()
+    })
+    $('#dsh').click(function() {
+        add.innerHTML = ''
+        add.innerHTML += `<div class="more">查看更多订单</div>`
+    })
+    $('#dpj').click(function() {
+        add.innerHTML = ''
+        add.innerHTML += `<div class="more">查看更多订单</div>`
+    })
+    $('.user_name').mouseover(function() {
+        $('.ts').show()
+    })
+    $('.user_name').mouseleave(function() {
+        $('.ts').hide()
+    })
+    // 判断登录用户
+    var n=sessionStorage.name;
+    $(".user_name a").html(n)
+    //退出登录
+    $("#esc").click(()=>{
+        sessionStorage.removeItem('name')
+        window.location.href="login.html"
+    })
+</script>
+
+</html>

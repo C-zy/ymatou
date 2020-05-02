@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洋码头 - 让人放心的海外购物社区货 - 购物车</title>
+    <link rel="stylesheet" href="css/shopping.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 网页顶部 -->
+    <div class="wrap">
+        <div class="wrap topbar">
+            <div class="inner">
+                <div class="topnar-fl">
+                    <a href="">Hi，欢迎来到洋码头！</a>
+                    <span class="user-type" style="padding-left: 10px;display: inline-block;">
+                        <a href="">我是买手</a>
+                    </span>
+                </div>
+                <ul class="nav topbar-fr usa">
+                    <li class="nav-item us">
+                        <a href="login.html"><span class="title">登录</span></a>
+                    </li>
+                    <li class="nav-item us">
+                        <a href="register.html"><span class="title">注册</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shopping.html"><span class="title">购物车</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="order_form.html"><span class="title">我的订单</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="personal.html"><span class="title">个人中心</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gonggao.html"><span class="title">规则&公告</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 网页右导航栏 -->
+        <div class="rightbar">
+            <ul class="rightbar-inner" style="padding:270px 0 0;">
+                <li class="item user"><a href=""><i class="rightbar-icon rti-user"></i></a></li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;">
+                        <i class="rightbar-icon rti-cart"></i><span class="title">
+                            购<br>物<br>车
+                        </span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;">
+                        <i class="rightbar-icon rti-code"></i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" style="padding-bottom: 2px;" onclick="
+                    javascript:document.documentElement.scrollTop = document.body.scrollTop =0">
+                        <i class="rightbar-icon rti-top"></i>
+                        <span class="title">TOP</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 购物车部分 -->
+        <div class="login wrap clearfix">
+            <a href="index.html" class="login_a"></a>
+            <span class="loginTitle">结算页</span>
+            <div class="shopping_flow clearfix">
+                <div class="left-1">
+                    <span class="circle">1</span>
+                    <span>我的购物车</span>
+                </div>
+                <div class="right_one"></div>
+                <div class="left_one"></div>
+                <div class="left-2">
+                    <span class="red red2">2</span>
+                    <span class="gray iconfont">提交订单</span>
+                </div>
+                <div class="right_two"></div>
+                <div class="left_two"></div>
+                <div class="left-3">
+                    <span class="red red3">3</span>
+                    <span class="gray gray3">选择支付方式</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap affirm">确认收货地址</div>
+    <div class="wrap site">
+        <div class="form">
+            <form action="" method="GET">
+                <div class="form-item">
+                    <div class="item1">
+                        <label for="name"><em>*</em>收货人:</label>
+                        <input type="text" name="" id="name" placeholder="请填写真实姓名">
+                        <span class="name-1">请输入真实姓名</span>
+                    </div>
+                    <div class="item2">
+                        请务必填写真实姓名，该姓名将用于海关清关核对
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="item1">
+                        <label for="phone"><em>*</em>手机号码:</label>
+                        <input type="text" name="" id="phone" placeholder="请填写真实的手机号">
+                        <span class="name-2">请输入正确的手机号码</span>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="city item1">
+                        <label for=""><em>*</em> 地址:</label>
+                        <select name="" id="province">
+                        </select>
+                        <select name="" id="city">
+                        </select>
+                        <select name="" id="area">
+                        </select>
+                    </div>
+                    <div class="item1">
+                        <label for=""></label>
+                        <input type="text" placeholder="请填写详细地址">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="item1">
+                        <label for="phone1"><em>*</em>邮政编码:</label>
+                        <input type="text" name="" id="phone1" placeholder="请填写邮政编码">
+                        <span class="name-3">请输入正确的邮政编码</span>
+                    </div>
+
+                </div>
+            </form>
+            <div class="item-btn item1">
+                <button id="submit">保存新地址</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrap affirm">确认商品信息</div>
+    <div class="commodity-list wrap"></div>
+    <div class="sale wrap">
+        <div class="sale-right">
+            哈尼，如需使用优惠码，请<a href="javascript:void(0)">下载洋码头app</a><br>
+            前往【我】>【余额/优惠券】兑换成优惠券使用~
+        </div>
+        <div class="sale-left">
+            使用平台优惠码:
+        </div>
+    </div>
+    <!-- 确认订单 -->
+    <div class="key wrap">
+        <ul>
+            <li>
+                <span>商品总金额:</span>
+                <span class="key-price"><em>￥</em><i id="key-count">10000</i></span>
+            </li>
+            <li>
+                <span>运费:</span>
+                <span class="key-price"><em>+￥</em><i>0.00</i></span>
+            </li>
+            <li>
+                <span>优惠</span>
+                <span class="key-price"><em>-￥</em><i>0.00</i></span>
+            </li>
+            <li>
+                <span>共<em class="shopping-num1">0</em>件商品,应付总金额:</span>
+                <span class="key-price key-count"><em>￥</em><i id="key-count-price">0.00</i></span>
+            </li>
+            <li class="loca">
+                <span>寄送至:</span>
+                <span id="location"></span>
+                <span>收货人:</span>
+                <span class="username"></span>
+            </li>
+            <li class="cart-ret">
+                <a href="javascript:void(0)" id="cart-date">返回购物车修改</a>
+                <button class="cart-btn">确认订单</button>
+            </li>
+        </ul>
+    </div>
+    <div class="xieyi wrap">
+        <input type="checkbox" name="" id="true-check">
+        <span>我已授权委托洋码头申报海关购买海外商品且已知晓《消费者知书》中内容并认可</span>
+    </div>
+    <!-- footer -->
+    <div class="wrapper footer">
+        <div class="matou-server">
+            <a href="" class="matou-server-link" style="color: #fff;">
+                <img src="img/footer/1.png" alt="">
+            </a>
+        </div>
+        <div class="area">
+            <div class="bottom_list">
+                <ul class="dl">
+                    <li class="dt">购物指南</li>
+                    <li class="dd">注册与登录</li>
+                    <li class="dd">账户信息维护</li>
+                    <li class="dd">购物流程</li>
+                    <li class="dd">会员体系</li>
+                    <li class="dd">常见问题</li>
+                </ul>
+                <ul class="dl">
+                    <li class="dt">订单服务</li>
+                    <li class="dd">订单状态说明</li>
+                    <li class="dd">自动取消订单</li>
+                    <li class="dd">上传身份证</li>
+                </ul>
+                <ul class="dl">
+                    <li class="dt">支付与配送</li>
+                    <li class="dd">支付方式</li>
+                    <li class="dd">优惠券和红包</li>
+                    <li class="dd">如何提现</li>
+                    <li class="dd">配送方式</li>
+                </ul>
+                <ul class="dl">
+                    <li class="dt">售后服务</li>
+                    <li class="dd">消费维权</li>
+                    <li class="dd">纠纷处理规则</li>
+                    <li class="dd">退货规则</li>
+                </ul>
+                <div class="dl last">
+                    <div class="dt">官方微信</div>
+                    <p><img src="img/footer/2.png" alt=""></p>
+                    <span class="weibobox">
+                        <a href="">关注微博</a>
+                        <a href=""><span class="ico-weibo-png"></span></a>
+                    </span>
+                </div>
+            </div>
+            <div class="matou-intro">
+                <a href="">关于码头</a>
+                <a href="">码头招聘</a>
+                <a href="">网站地图</a>
+                <a href="">所有帮助</a>
+                <a href="">海外招商中心</a>
+                <a href="">扫货买手规则</a>
+                <a href="" class="last">卖家常见问题</a>
+            </div>
+            <p class="footer_p">© 2014－2020 ymatou.hk 版权所有</p>
+        </div>
+    </div>
+    <div class="add-shopping">
+        您还没有添加商品呢，先去逛一逛吧~
+    </div>
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>

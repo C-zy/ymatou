@@ -1,0 +1,117 @@
+.login .right_two{
+    width: 0;
+    height: 0;
+    float: left;
+    background-color: #c33;
+    margin: 0 0 0 -2px;
+    border-color:transparent ;
+}
+.login .left-3{
+    background-color: #c33;
+}
+.login .red3{
+    background-color: white;
+    color: #c33;
+}
+.login .gray{
+    color: white;
+}
+/* 支付 */
+.zfb{
+    border: 1px solid #cecece;
+    margin: 40px auto;
+    box-sizing: border-box;
+    padding: 30px 30px 80px;
+    font-size: 14px;
+}
+.mc-hd{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cecece;
+}
+.mc-hd-p1{
+    font-size: 20px;
+}
+.zfb img{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right:10px;
+}
+.mc-he{
+    margin: 30px 0;
+}
+.mc-he em{
+
+    color: #c33;
+}
+#md-he-1{
+    cursor: pointer;
+}
+.mc-he-p1{
+    font-size: 20px;
+}
+.mc-he-p1 em{
+    font-weight: 700;
+}
+.mc-he-p2{
+    padding: 10px 0;
+    font-size: 12px;
+    color: #9d9d9d;
+}
+.mc-he-p2 input{
+   
+    vertical-align: middle;
+}
+/* 支付 */
+.mc-bo{
+    text-align:center;
+    font-size: 12px;
+}
+.mc-bo-lf,.mc-bo-ri{
+    float: left;
+    width: 118px;
+    height: 114px;
+    padding-top: 22px;
+    border: 1px solid #cecece;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.mc-bo .right_dui{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.mc-bo img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+.mc-bo p{
+    padding:5px 0;
+}
+.hou {
+    font-size: 12px;
+    padding: 10px 0;
+}
+.hou em{
+    font-size: 16px;
+    color: #c33;
+}
+.let{
+    width: 120px;
+    height: 50px;
+    color: white;
+    background-color: #c33;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.time{
+    color: #c33;
+    padding: 0 5px;
+}

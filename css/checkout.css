@@ -1,0 +1,379 @@
+body{
+    text-align: left;
+}
+.footer_p{
+    text-align: center;
+    padding: 15px;
+}
+.login .left-2{
+    background-color: #c33;
+}
+.login .gray{
+    color: white;
+}
+.login .left_one{
+    width: 0;
+    height: 0;
+    float: left;
+    border: none;
+}
+.login .right_one{
+    width: 0px;
+    height: 0px;
+    float: left;
+    background-color: #c33;
+    margin: 0 0px 0 -2px;
+ }   
+ .login .right_two{
+     border-left-color: #c33;
+     border-right-color: rgba(0,0,0,.06);
+     border-top-color: rgba(0,0,0,.06);
+     border-bottom-color: rgba(0,0,0,.06);
+ }
+.login .red2{
+    background-color: white;
+    color: #c33;
+}
+.login .gray3{
+    color: #9b9b9b;
+}
+.site{
+    border: 1px solid #cecece;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.site input{
+    outline: none;
+    width: 219px;
+    padding: 5px 3px;
+    border: 1px solid #cecece;
+}
+.site input::placeholder{
+    font-size: 12px;
+}
+.site em{
+    color: #c33;
+}
+/* 确认收货地址 */
+.affirm{
+    font-size: 16px;
+    padding: 20px 0 10px 0;
+    line-height: 18px;
+}
+ label{
+    display: inline-block;
+    width: 120px;
+    box-sizing: border-box;
+    text-align: right;
+    padding-right: 20px;
+}
+.item1{
+    margin: 10px 0 0 60px;
+}
+.item2{
+    margin: 10px 0 0 190px;
+    color: #9b9b9b;
+}
+.site select{
+    padding: 5px 3px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.item-btn{
+    margin-left: 184px;
+}
+.item-btn button{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 3px 20px;
+    background-color: #c33;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/* 确认商品信息 */
+.commodity-tr{
+    border: 1px solid #cecece;
+    padding: 10px 0;
+}
+.commodity-tr span{
+    display: inline-block;
+}
+.tr-1{
+    width: 200px;
+    padding-left: 110px;
+}
+.tr-2{
+    width: 180px;
+}
+.tr-3,.tr-4{
+    width: 120px;
+}
+.commodity-de{ 
+    border: 1px solid #cecece;
+    border-top-color: transparent;
+    position: relative;
+    box-sizing: border-box;
+}
+.commodity-city img{
+    width: 16px;
+}
+.commodity-city{
+    padding: 5px 0 ;
+}
+.city-head{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+.commo-left{
+    float: left;
+    height: 80px;
+    width: 840px;
+    padding: 10px 0;
+    position: relative;
+}
+.commo-right{
+    position: absolute;
+    left: 840px;
+    top: -1px;
+    height: 139px;
+    width: 358px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-left-color:  #cecece;
+}
+.order-p{
+    padding: 10px 0 10px 10px;
+}
+.order{
+    display: inline-block;
+    width: 50px;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #c33;
+}
+/* 右边邮寄信息 */
+.co-r-1{
+    padding-left: 20px;
+    color: #9d9d9d;
+}
+.co-r-1 em{
+    padding-left: 10px;
+    color: black;
+}
+.liuyan{
+    width: 300px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #cecece;
+}
+.liuyan::placeholder{
+    font-size: 12px;
+}
+/* 左边图片信息 */
+.co-l-1{
+    /* position: relative; */
+    float: left;
+    width: 280px;
+}
+.co-l-2{
+    position: relative;
+    float: left;
+    width: 215px;
+    height: 100%;
+}
+.co-l-1 img{
+    padding-left: 10px;
+    width: 80px;
+    height: 80px;
+}
+.co-l-name{
+    margin-left: 20px;
+    position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    width: 180px;
+    top: 10px;
+}
+.co-l-way{
+    width: 300px;
+    position: absolute;
+    bottom: 10px;
+    left: 110px;
+}
+.co-l-way span{
+    margin-right: 10px;
+}
+.co-l-way img{
+    padding-left: 0;
+    width: 17px;
+    height: 17px;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+.co-l-type{
+    position: absolute;
+    width: 100px;
+    left: 25px;
+}
+.co-l-3,.co-l-4,.co-l-5{
+    display: inline-block;
+}
+.co-l-3{
+    width: 125px;
+}
+.co-l-4{
+    width: 110px;
+}
+.co-l-5{
+    padding-left: 8px;
+    font-weight: 700;
+}
+/* 结算价钱 */
+.account-price1{
+    height: 30px;
+    width: 1200px;
+    border: 1px solid #cecece;
+    border-top-color: transparent;
+}
+.account-price2{
+    border: 1px solid #cecece;
+    border-top-color: transparent;
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+.account-price2 p{
+    text-align: right;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.account-price2 em,.account-price2 i{
+    color: #c33;
+}
+.price2-span1{
+    display: inline-block;
+    margin-right: 20px;
+}
+.price2-span1 em{
+    padding: 0 10px;
+}
+.price2-span2{
+    font-size: 16px;
+}
+.price2-span3{
+    margin-right: 40px;
+}
+/* 优惠券 */
+.sale{
+    height: 50px;
+    padding: 15px 0;
+}
+.sale div{
+    float: right;
+}
+.sale-right{
+    width: 263px;
+    margin-right:100px ;
+    padding-left: 40px;
+}
+.sale-right a{
+    color: #338adb;
+}
+/* 确认订单 */
+.key{
+    width: 1140px;
+    background-color: #f8f8f8;
+    padding: 10px 30px;
+    text-align: right;
+}
+.key-price{
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+}
+.key li{
+    padding: 10px 0;
+}
+.key-count{
+    font-size: 20px;
+    color: #c33;
+}
+.loca span:nth-of-type(2n+1){
+    padding-right: 20px;
+}
+.cart-ret{
+    height: 50px;
+}
+.cart-btn{
+    width: 120px;
+    height: 50px;
+    color: white;
+    background-color: #dedede;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.cart-btn1{
+    background-color: #c33;
+    outline: none;
+    cursor: pointer;
+
+}
+.cart-ret a{
+    padding-right: 20px;
+    color:#338adb ;
+}
+/* 协议 */
+.xieyi{
+    text-align: right;
+}
+.xieyi input{
+    vertical-align: middle;
+}
+.xieyi span:hover{
+    color: red;
+    text-decoration: underline;
+}
+.key li em{
+    padding-right: 5px;
+}
+.shopping-num1{
+    color: #c33;
+    padding: 0 5px;
+}
+/* 验证 */
+.name-1{
+    display: none;
+}
+.name-2{
+    display: none;
+}
+.name-3{
+    display: none;
+}
+/* 遮罩层 */
+.add-shopping{
+    width: 300px;
+    height: 80px;
+    background-color: rgba(0,0,0,.1);
+    position: fixed;
+    font-size: 17px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 80px;
+    border-radius: 20px;
+    color: #c33;
+    display: none;
+}

@@ -1,0 +1,305 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font: normal 12px/1.5 Microsoft yahei,Arial;
+  color: #666;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+/* 版心 */
+.wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+.clearfix:after {
+  /*伪元素除浮动*/
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+/* 网页顶部样式 */
+b, cite, em, i {
+  font-style: normal;
+}
+.topbar {
+  background-color: #f8f8f8;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 0;
+  z-index: 1;
+  width: 100%;
+  min-width: 1200px;
+}
+.inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+.topbar .topnar-fl {
+  float: left;
+}
+.topbar .topbar-fr {
+  float: right;
+}
+.topbar .nav-item {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: relative;
+  height: 29px;
+  border-top: 1px solid #f8f8f8;
+}
+.topbar .user-type, .topbar a {
+  color: #646464;
+}
+.topbar .nav-item a {
+  display: inline-block;
+  padding: 0 10px;
+}
+.topbar .downmenu {
+  position: relative;
+  /* right: 10px; */
+}
+.topbar .downmenu .title{
+  margin-right:10px ;
+}
+.topbar .dropdownlist {
+  border-top: 0;
+  display: none;
+  width: 100%;
+  top: 29px;
+  left: -1px;
+  border-color: #dedede;
+  text-align: left;
+}
+.topbar .dropdownlist {
+  border: 1px solid #dedede;
+  position: absolute;
+  overflow: hidden;
+  width: 72px;
+  right: 2px;
+  left: auto;
+  display: none;
+}
+.topbar .arrow-bt {
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  display: inline-block;
+  border-width: 4px;
+  border-style: solid dashed dashed;
+  border-color: #9b9b9b transparent transparent;
+  position: absolute;
+  top: 14px;
+  right: 8px;
+}
+.head-d:hover .dropdownlist{
+  display: block;
+}
+/* 网页右导航栏 */
+.rightbar {
+  width: 35px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #383838;
+  color: #fff;
+  z-index: 11;
+  text-align: center; }
+
+.rightbar .item {
+  border-top: 1px solid #979797;
+  padding-bottom: 18px;
+  position: relative; }
+
+.rightbar .user {
+  border-top: 0; }
+
+.rightbar .title {
+  margin-top: 5px;
+  display: block;
+  word-break: normal;
+  word-wrap: normal; }
+
+.rightbar .item a {
+  padding: 18px 0 7px;
+  display: block;
+  color: #fff; }
+
+.rightbar-icon {
+  background-image: url(../img/banner2.png);
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.rti-user {
+  background-position: 0 0; }
+
+.rti-cart {
+  background-position: -17px 0; }
+
+.rti-code {
+  background-position: -34px 0; }
+
+.rti-top {
+  background-position: -102px 0; }
+
+.login {
+  height: 57px;
+  margin-top: 30px;
+  position: relative;
+  font-size: 16px; }
+  .login .shopping_flow {
+    width: 600px;
+    position: absolute;
+    right: 0;
+    top: 15px; }
+  .login .left-1, .login .left-2, .login .left-3 {
+    float: left;
+    height: 36px;
+    margin-right: 2px;
+    line-height: 36px;
+    padding-left: 20px; }
+  .login .left-1 {
+    width: 160px;
+    background-color: #c33;
+    color: white; }
+  .login .left-2 {
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0.06); }
+  .login .left-3 {
+    width: 160px;
+    background-color: rgba(0, 0, 0, 0.06); }
+  .login .right_one, .login .right_two {
+    width: 0;
+    height: 0;
+    float: left;
+    border-bottom: 18px solid transparent;
+    border-left: 18px solid #c33;
+    border-right: 18px solid transparent;
+    border-top: 18px solid transparent;
+    margin: 0 0px 0 -2px; }
+  .login .right_two {
+    border-left-color: rgba(0, 0, 0, 0.06); }
+  .login .left_one {
+    width: 0;
+    height: 0;
+    float: left;
+    border-bottom: 18px solid rgba(0, 0, 0, 0.06);
+    border-left: 18px solid transparent;
+    border-right: 18px solid rgba(0, 0, 0, 0.06);
+    border-top: 18px solid rgba(0, 0, 0, 0.06);
+    margin-left: -34px; }
+  .login .login_a {
+    float: left;
+    width: 102px;
+    height: 57px;
+    background: url(../img/login.png); }
+  .login .loginTitle {
+    float: left;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #383838; }
+  .login .circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: #c33; }
+  .login .red {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: white; }
+  .login .gray {
+    color: gray; }
+
+.cart {
+  text-align: left; }
+  .cart .cartTitle {
+    margin-top: 25px;
+    font-size: 20px;
+    height: 35px;
+    font-weight: bold;
+    border-bottom: 1px solid gray; }
+    .cart .cartTitle span {
+      color: #c33;
+      padding: 0 33px 6px;
+      border-bottom: 2px solid #c33; }
+  .cart .cart_img {
+    height: 111px;
+    margin-top: 16px;
+    background: url(../img/shopping.png) no-repeat;
+    background-position: 400px;
+    font-size: 15px;
+    text-align: center;
+    margin: 50px 0; }
+    .cart .cart_img div {
+      display: inline-block;
+      width: 235px;
+      padding-left: 35px;
+      margin-left: 180px;
+      margin-top: 42px; }
+      .cart .cart_img div a {
+        color: #1f7dd8; }
+
+.like_item {
+  font-size: 16px;
+  width: 225px;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 2px solid #cc3333; }
+  .like_item i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/spirit.png) no-repeat;
+    background-position: -100px 2px; }
+
+.commodity {
+  margin-left: -10px; }
+  .commodity .lists {
+    width: 212px;
+    float: left;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 9px;
+    height: 300px;
+    border: 1px solid #dedede;
+    margin: 10px 0 20px 10px;
+    position: relative; }
+    .commodity .lists img {
+      width: 212px;
+      height: 212px; }
+    .commodity .lists .price {
+      color: #cc3333;
+      font-weight: bolder;
+      font-size: 18px;
+      position: absolute;
+      bottom: 5px; }
+
+/*# sourceMappingURL=shopping.css.map */

@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.top{
+    width: 100%;
+    min-width: 1200px;
+    height: 98px;
+    border-bottom: 2px solid #c33;
+}
+.top-middle{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    /* width: 1000px; */
+    min-width: 1000px;
+    margin: auto;
+}
+.left{
+    float: left;
+}
+.logo{
+    width: 311px;
+    height: 73px;
+    background: url(https://s2.ymatou.com/login/a09cf0d320e4ffc6445ae0ec42cb02f0.png);
+    display: block;
+    float: left;
+    margin: 12px 0 13px;
+}
+a{
+    text-decoration: none;
+}
+.right{
+    padding-top: 40px;
+    float: right;
+    line-height: 30px;
+    font-size: 12px;
+}
+.item{
+    color: #999999;
+    float: left;
+    margin-right: 5px;
+    line-height: 28px;
+}
+.top-item{
+    float: left;
+    color: #999;
+    padding: 0;
+}
+.top-hide{
+    border: 1px solid #666;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    z-index: 101;
+    top: 68px;
+    line-height: 18px;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+}
+.top-hide li{
+    width: 78px;
+    border-bottom: 1px dashed #ddd;
+    padding: 5px 8px;
+    margin-bottom: -1px;
+    text-align: left;
+}
+.drop{
+    border: 1px solid #fff;
+    display: block;
+    margin-top: -1px;
+    line-height: 29px;
+    color: #999;
+}
+.drop span{
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+.arrow{
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    display: inline-block;
+    border-width: 3px;
+    border-style: solid dashed dashed;
+    border-color: #666 transparent transparent;
+    margin: 6px 3px 0;
+}
+/* 中间内容 */
+.middle{
+    width: 900px;
+    margin: 50px auto 0;
+    height: 450px;
+}
+.login-one{
+    width: 450px;
+    height: 260px;
+    margin-top: 30px;
+    float: left;
+}
+.shijie{
+    width: 450px;
+    height: 260px;
+    background:url(https://s2.ymatou.com/login/5aebbf5a6893bd825441a68a60b42b51.jpg);
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.input-one{
+    width: 360px;
+    float: right;
+}
+.action{
+    color: #666;
+    text-align: left;
+    font-size: 14px;
+}
+.line{
+    display: inline-block;
+}
+.line{
+    border-left: 1px solid #ccc;
+    width: 1px;
+    height: 13px;
+    vertical-align: middle;
+}
+.input-login{
+    width: 360px;
+    border: 1px solid #ccc;
+    margin: 5px 0 1px;
+    background-color: #fefefe;
+}
+.border{
+    margin: 5px;
+    padding: 30px 0;
+    text-align: center;
+    width: 350px;
+    background-color: #fff;
+}
+.name-one{
+    font-size: 14px;
+    color: #333;
+    margin-left: 9px;
+}
+.div_input{
+    height: 28px;
+    width: 300px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+}
+.input_style{
+    width: 200px;
+    height: 26px;
+    border: 1px solid #dadada;
+}
+.blue{
+    color: #3368ff;
+}
+.check_login li{
+    float: left;
+    margin-left: 68px;
+}
+#hello{
+    vertical-align: middle;
+}
+.logindiv{
+    text-align: left;
+    margin-left: 68px;
+}
+#loginBtn{
+    width: 67px;
+    height: 30px;
+    cursor: pointer;
+    background:url(https://s2.ymatou.com/login/0c514d7e61b7db90f0798895c10e05a9.png);
+    display: inline-block;
+}
+.forgetPwd{
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+#line_line{
+    margin: 0 auto 15px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #fff;
+    width: 280px;
+}
+.inline-one{
+    width: 300px;
+    height: 28px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+}
+.inline-one li{
+    margin-right: 6px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+}
+.sign_login{
+    display: inline-block;
+    width: 80px;
+}
+.sign_login i{
+    width: 20px;
+    background-image: url(https://s2.ymatou.com/login/d50e308ab6557dead5473e95d8901975.png);
+    background-repeat: no-repeat;
+    background-position: -86px -235px;
+    height: 20px;
+    float: left;
+}
+#login-two{
+    background: url(https://s2.ymatou.com/login/bfdb5897258b551e046ea2fbc433c70b.png);
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 20px;
+}
+#login-two i{
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 16px;
+}
+.money i{
+    width: 20px;
+    background-image: url(https://s2.ymatou.com/login/d50e308ab6557dead5473e95d8901975.png);
+    background-repeat: no-repeat;
+    background-position: -63px -235px;
+    height: 20px;
+    float: left;
+}
+.bottom{
+    overflow: hidden;
+    width: 100%;
+}
+#bottom-one{
+    width: 510px;
+    height: auto;
+    font-size: 12px;
+    color: #666666;
+    margin: 0 auto;
+    text-align: center;
+}

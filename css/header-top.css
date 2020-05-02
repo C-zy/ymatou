@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color:#333;
+}
+body {
+    background-color: #fff;
+    font: normal 12px/1.5 Microsoft yahei,Arial;
+    color: #666;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+/* 网页顶部样式 */
+b, cite, em, i {
+    font-style: normal;
+}
+.topbar {
+    background-color: #f8f8f8;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 0;
+    z-index: 1;
+    width: 100%;
+    min-width: 1200px;
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.topbar .topnar-fl {
+    float: left;
+}
+.topbar .topbar-fr {
+    float: right;
+}
+.topbar .nav-item {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    height: 29px;
+    border-top: 1px solid #f8f8f8;
+}
+.topbar .user-type, .topbar a {
+    color: #646464;
+}
+.topbar .nav-item a {
+    display: inline-block;
+    padding: 0 10px;
+}
+.topbar .downmenu {
+    position: relative;
+    /* right: 10px; */
+}
+.topbar .downmenu .title{
+    margin-right:10px ;
+}
+.topbar .dropdownlist {
+    border-top: 0;
+    display: none;
+    width: 100%;
+    top: 29px;
+    left: -1px;
+    border-color: #dedede;
+    text-align: left;
+}
+.topbar .dropdownlist {
+    border: 1px solid #dedede;
+    position: absolute;
+    overflow: hidden;
+    width: 72px;
+    right: 2px;
+    left: auto;
+    display: none;
+}
+.topbar .arrow-bt {
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    display: inline-block;
+    border-width: 4px;
+    border-style: solid dashed dashed;
+    border-color: #9b9b9b transparent transparent;
+    position: absolute;
+    top: 14px;
+    right: 8px;
+}
+.head-d:hover .dropdownlist{
+    display: block;
+}
+/* 网页右导航栏 */
+.rightbar {
+    width: 35px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #383838;
+    color: #fff;
+    z-index: 11;
+}
+.rightbar .item {
+    border-top: 1px solid #979797;
+    padding-bottom: 18px;
+    position: relative;
+}
+.rightbar .user {
+    border-top: 0;
+}
+.rightbar .title {
+    margin-top: 5px;
+    display: block;
+    word-break: normal;
+    word-wrap: normal;
+}
+.rightbar .item a {
+    padding: 18px 0 7px;
+    display: block;
+    color: #fff;
+}
+.rightbar-icon {
+    background-image: url(../img/top/banner2.png);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.rti-user {
+    background-position: 0 0;
+}
+.rti-cart {
+    background-position: -17px 0;
+}
+.rti-code {
+    background-position: -34px 0;
+}
+.rti-top {
+    background-position: -102px 0;
+}
